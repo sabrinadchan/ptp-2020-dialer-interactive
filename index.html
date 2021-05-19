@@ -170,6 +170,20 @@
     background: gold;
   }
 
+  #selectDemographics {
+    border: 1px solid transparent;
+    outline: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    text-align-last: right;
+    cursor: pointer;
+  }
+
+  #selectDemographics option {
+    direction: rtl;
+  }
+
   circle {
     stroke: none;
     fill: black;
@@ -351,7 +365,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1>PTP's 2020 Recap</h1>
+        <h1>PTP Interactive 2020 Impact Report</h1>
         <p>An interactive exploration of Progressive Turnout Project's 2020 dialer program.</p>
       </div>
     </div>
@@ -382,7 +396,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <div class="callout" style="background-image: url('static/img/staff.jpg');"><p><span>950 staff</span></p></div>
+        <div class="callout" style="background-image: url('static/img/staff.jpg');"><p><span>1,210 staff</span></p></div>
       </div>
       <div class="col">
         <div class="callout" style="background-image: url('static/img/turnout.jpg');"><p><span>N% turnout among universe</span></p></div>
@@ -455,9 +469,21 @@
     <div class="row">
       <div class="col">
         <h3>From Doors To Phones</h3>
-        <p>When PTP shifted our conversations from on the doors to phone calls in August of 2020, our voter universe in turn shifted in a dramatic way. While we still focused on contacting likely Democrats, especially those who are less likely to turnout to vote, we were suddenly limited to just the individuals for whom we had phone numbers. On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. The map below shows the approximate proportional distribution of our targets during each phase of our program. One dot represents 1/2000th of the total target universe.</p>
+        <p>When PTP shifted our conversations from on the doors to phone calls in August of 2020, our voter universe in turn shifted in a dramatic way. While we still focused on contacting likely Democrats, especially those who are less likely to turnout to vote, we were suddenly limited to just the individuals for whom we had phone numbers. On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. This program shift also had an impact on the age and racial breakdown of our target voters. As our universe expanded beyond large metro areas, our universe became proportionately whiter. Moreover, by switching the phones, the share of our universe made up by voters 65+ expanded greatly in each state.
+      </div>
+    </div>
 
-        <p>Click a state on the map of the US to select a state where we had in person canvassing. Click the two buttons below the map of the selected to toggle between our canvassing and phone universes.</p>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <h4 id="slope-charts-title"><select id="selectDemographics"></select>  of Attempted Voters</h4>
+      </div>
+    </div>
+
+    <div id="slope-charts" class="row align-items-center"></div>
+
+    <div class="row">
+      <div class="col">
+        <p>The map below gives a visual sense of the distribution of our targets during the canvass and phone phases of our program. One dot represents 1/2000th of the selected phase's target universe. Click a state on the map of the US to select a state where we had in person canvassing. Click the two buttons below the map of the selected to toggle between our canvassing and phone universes.</p>
       </div>
     </div>
 
@@ -595,6 +621,7 @@
   <script src="election-results-pure-d3.js"></script>
   <script src="universe.js"></script>
   <script src="treemap.js"></script>
+  <script src="slope-charts.js"></script>
   <script src="geographic-shift.js"></script>
   <script src="program-metrics.js"></script>
   <!--<script src="turnout.js"></script>-->
