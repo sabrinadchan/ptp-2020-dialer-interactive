@@ -189,8 +189,21 @@
     fill: black;
   }
 
+  .text-button {
+    cursor: pointer;
+  }
+
   .text-button.active {
-    fill: red;
+    cursor: default;
+  }
+
+  .text-button rect {
+    fill: #1cb4f0;
+    fill-opacity: 0.5;
+  }
+
+  .text-button.active rect{
+    fill-opacity: 1;
   }
 
   #field-staff-table {

@@ -22,29 +22,38 @@
       .attr("font-size", "20px")
       .attr("font-weight", "bold");
 
-  var canvassingTargetsButton = svg.append("text")
-      .attr("id", "default-text-button")
-      .attr("class", "text-button clickable")
-      .attr("x",  outerWidth / 3)
-      .attr("y", outerHeight - 10)
-      .attr("text-anchor", "end")
-      .attr("font-size", "14px")
-      .attr("font-weight", "bold")
-      .text("Canvassing Targets");
+   function drawTextButton(svg, text, x, y, textAnchor) {
+    var button = svg.append("g")
+        .attr("class", "text-button")
+        .attr("id", text == "Canvassing Targets" ? "default-text-button" : "");
 
-  var phoneTargetsButton = svg.append("text")
-      .attr("class", "text-button clickable")
-      .attr("x",  2 * outerWidth / 3)
-      .attr("y", outerHeight - 10)
-      .attr("text-anchor", "start")
-      .attr("font-size", "14px")
-      .attr("font-weight", "bold")
-      .text("Phone Targets");
+    var rectLayer = button.append("g"),
+        textLayer = button.append("g");
 
-//<rect class="textbox" rx="3" ry="3" x="546.65625" y="274" width="46.6875" height="20.5" fill="#bbb"></rect>
+    var text = textLayer.append("text")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("text-anchor", textAnchor)
+        .attr("font-size", "14px")
+        .attr("font-weight", "bold")
+        .attr("fill", "white")
+        .html(text);
 
-  /*var projection = d3.geoIdentity()
-      .reflectY(true);*/
+    var textBBox = text.node().getBBox();
+
+    var rect = rectLayer.append("rect")
+        .attr("rx", 3)
+        .attr("ry", 3)
+        .attr("x", textBBox.x - 3)
+        .attr("y", textBBox.y - 1)
+        .attr("width", textBBox.width + 6)
+        .attr("height", textBBox.height + 2);
+
+    return button;
+  }
+
+  canvassingTargetsButton = drawTextButton(svg, "Canvassing Targets", 10, outerHeight - 10, "start");
+  phoneTargetsButton = drawTextButton(svg, "Phone Targets", outerWidth - 10, outerHeight - 10, "end");
 
   const projectionState = d3.geoMercator()
       .scale(1 / (2 * Math.PI))

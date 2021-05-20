@@ -71,7 +71,7 @@
 
         x.domain(d3.range(n))
         y.domain([demographic == "sex" ? .3 : 0, demographic == "age" ? .4 : demographic == "sex" ? .7 : 1]);
-        console.log(x(1)-x(0))
+
         var svg = d3.select("#slope-charts")
           .append("div")
             .attr("class", "col col-md-6 col-lg-4 col-xl-3 justify-content-center")
