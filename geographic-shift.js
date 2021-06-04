@@ -1,5 +1,5 @@
 (function() {
-    var margin = { top: 30, right: 0, bottom: 30, left: 0 },
+    var margin = { top: 30, right: 0, bottom: 35, left: 0 },
         outerWidth = 450,
         outerHeight = 300 + margin.top + margin.bottom,
         width = outerWidth - margin.right - margin.left,
@@ -42,18 +42,20 @@
     var textBBox = text.node().getBBox();
 
     var rect = rectLayer.append("rect")
-        .attr("rx", 3)
-        .attr("ry", 3)
-        .attr("x", textBBox.x - 3)
-        .attr("y", textBBox.y - 1)
-        .attr("width", textBBox.width + 6)
-        .attr("height", textBBox.height + 2);
+        .attr("rx", 8)
+        .attr("ry", 8)
+        .attr("x", textBBox.x - 10)
+        .attr("y", textBBox.y - 4)
+        .attr("width", textBBox.width + 20)
+        .attr("height", textBBox.height + 8)
+        .attr("stroke-width", "1.5px")
+        .attr("stroke", "#333");
 
     return button;
   }
 
-  canvassingTargetsButton = drawTextButton(svg, "Canvassing Targets", 10, outerHeight - 10, "start");
-  phoneTargetsButton = drawTextButton(svg, "Phone Targets", outerWidth - 10, outerHeight - 10, "end");
+  canvassingTargetsButton = drawTextButton(svg, "Canvassing Targets", 12, outerHeight - 10, "start");
+  phoneTargetsButton = drawTextButton(svg, "Phone Targets", outerWidth - 12, outerHeight - 10, "end");
 
   const projectionState = d3.geoMercator()
       .scale(1 / (2 * Math.PI))
@@ -209,7 +211,7 @@
     d3.select(text).classed("active", true);
 
     var t = d3.transition()
-        .delay(1000)
+        .delay(500) // make shorter still?
         .duration(2000);
 
     circles.selectAll("circle").data(data)

@@ -9,384 +9,21 @@
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-tile@1"></script>
+<script src="static/d3-tip.js"></script>
+<!--<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
- <link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static/main.css">
 <script src="common.js"></script>
-<style>
-  body {
-    font-family: "Proxima Nova", Arial;
-  }
-
-  h1, h2 {
-    color: #1cb4f0;
-    font-family: "alternate-gothic-no-2-d", Helvetica, Sans-serif;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    text-transform: uppercase;
-  }
-
-  p {
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  div.row {
-    margin-bottom: 20px;
-  }
-
-  .clickable {
-    cursor: pointer;
-  }
-
-  .callout {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
-  }
-
-  .callout p span {
-    color: white;
-    font-size: 48px;
-    font-weight: bold;
-    background: #1cb4f0;
-  }
-
-  .state-path {
-    stroke: #000;
-    stroke-width: 0.25px;
-  }
-
-  .state-path.active {
-    stroke-width: 1.5px;
-  }
-
-  table {
-    border-collapse: collapse;
-    font-size: 10px;
-  }
-
-  table th {
-    background: white;
-    box-shadow: 0px 1.5px 0px 0px black;
-  }
-
-  table thead tr th {
-    position: sticky;
-    top: 0;
-  }
-
-  table tr:nth-child(even) {
-    background: #EEE;
-  }
-
-  table tr:hover {
-    background: lightyellow;
-  }
-
-  table tfoot {
-    font-weight: bold;
-  }
-
-  .state-row.active {
-    background: lightyellow;
-  }
-
-
-  #election-results-table {
-    width: 100%;
-    min-width: 336px;
-    max-width: 400px;
-    overflow-x: scroll;
-  }
-
-  th.col.active {
-    color: red;
-  }
-
-  #election-results-table .col {
-    width: 15%;
-    text-align: right;
-  }
-
-  #election-results-table .col-state  {
-    text-align: left;
-    width: 25%;
-  }
-
-  #targets {
-    overflow-x: scroll;
-  }
-
-  #targets-table {
-    width: 100%;
-    min-width: 696px;
-  }
-
-  #targets-table .col {
-    text-align: right;
-  }
-
-  #targets-table .col-statecode{
-    text-align: left;
-    width: 12%;
-  }
-
-  #targets-table .col-universe{
-    width: 12%;
-  }
-
-  #targets-table .col-avg_age{
-    width: 11%;
-  }
-
-  #targets-table .col-under_35_pct{
-    width: 10%;
-  }
-
-  #targets-table .col-f_pct{
-    width: 10%;
-  }
-
-  #targets-table .col-poc_pct{
-    width: 15%;
-  }
-
-  #targets-table .col-rural_pct{
-    width: 10%;
-  }
-
-  #targets-table .col-suburban_pct{
-    width: 10%;
-  }
-
-  #targets-table .col-urban_pct{
-    width: 10%;
-  }
-
-  .buttonDemographic.active {
-    background: gold;
-  }
-
-  #selectDemographics {
-    border: 1px solid transparent;
-    outline: none;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    text-align-last: right;
-    cursor: pointer;
-  }
-
-  #selectDemographics option {
-    direction: rtl;
-  }
-
-  circle {
-    stroke: none;
-    fill: black;
-  }
-
-  .text-button {
-    cursor: pointer;
-  }
-
-  .text-button.active {
-    cursor: default;
-  }
-
-  .text-button rect {
-    fill: #1cb4f0;
-    fill-opacity: 0.5;
-  }
-
-  .text-button.active rect{
-    fill-opacity: 1;
-  }
-
-  #field-staff-table {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  #field-staff-table .col-state {
-    text-align: left;
-    width: 40%;
-  }
-
-  #field-staff-table .col-calling-region {
-    text-align: left;
-    width: 40%;
-  }
-
-  #field-staff-table .col-field_staff {
-    text-align: right;
-    width: 20%;
-  }
-
-
-  .x.axis path {
-    stroke: none;
-  }
-
-  .secondary.axis text {
-    font-size: 7px;
-  }
-
-  .state.active {
-    fill: #1cb4f0;
-  }
-
-  .line.active {
-    stroke-width: 5px;
-  }
-
-  #metrics-table {
-    width: 200px;
-  }
-
-  .col-1  {
-    text-align: left;
-    width: 50%;
-  }
-
-  .col-2 {
-    width: 50%;
-    text-align: right;
-  }
-
-  #impact {
-    overflow-x: scroll;
-  }
-
-  #impact-table {
-    width: 100%;
-    min-width: 696px;
-  }
-
-  #impact-table .col {
-    text-align: right;
-  }
-
-  #impact-table .col-statecode {
-    text-align: left;
-    width: 14%
-  }
-
-  #impact-table .col-turnout_attempted {
-    text-align: right;
-    width: 13%;
-  }
-
-  #impact-table .col-turnout_canvassed {
-    text-align: right;
-    width: 13%;
-  }
-
-  #impact-table .col-dials {
-    text-align: right;
-    width: 10%;
-  }
-
-  #impact-table .col-canvassed {
-    text-align: right;
-    width: 10%;
-  }
-
-  #impact-table .col-ctvs {
-    text-align: right;
-    width: 10%;
-  }
-
-  #impact-table .col-vbms {
-    text-align: right;
-    width: 10%;
-  }
-
-  #impact-table .col-vote_plan {
-    text-align: right;
-    width: 10%;
-  }
-
-  #impact-table .col-dialer_minutes {
-    text-align: right;
-    width: 10%;
-  }
-
-  path.line {
-    fill: none;
-  }
-
-  .x.axis path {
-    stroke: none;
-  }
-
-  .secondary.axis text {
-    font-size: 7px;
-  }
-
-  .annotation text {
-    font-size: 0.5em;
-  }
-
-  .label--top text {
-    text-anchor: middle;
-    font-size: 0.5em;
-    opacity: 1;
-  }
-
-  .label--under text {
-    font-size: 0.5em;
-    stroke: #eee;
-    opacity: 1;
-    stroke-width: 5px;
-    stroke-linejoin: round;
-  }
-
-  .annotation.label.active text {
-    font-size: 0.75em;
-  }
-
-  .bar {
-    opacity: 0;
-  }
-
-  .bar.active, .bar.All {
-    opacity: 1;
-  }
-
-  .state.active {
-    fill: #1cb4f0;
-  }
-
-  .geoshift-selector {
-    fill-opacity: 0;
-  }
-
-  .geoshift-selector.active {
-    fill-opacity: 0.5;
-  }
-
-  .line.active {
-    stroke-width: 4px;
-  }
-</style>
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1>PTP Interactive 2020 Impact Report</h1>
-        <p>An interactive exploration of Progressive Turnout Project's 2020 dialer program.</p>
-      </div>
-    </div>
+        <h2>Interactive Impact Report</h2>
+        <p>Progressive Turnout Project is the largest voter contact organization in the country. Our mission: Get Democrats to vote.</p>
 
-    <div class="row">
-      <div class="col">
-        <h2>Our Organization</h2>
-        <p>Progressive Turnout Project is the largest voter contact organization in the country. Our mission: Get Democrats to vote. The best way to turn out voters is through one-on-one conversations. We talk to inconsistent voters who are likely Democrats, so they do not need persuading on who to vote for. They just need a nudge, some information, and to hear from a real person. That means every eligible non-voter we are able to reach brings Democrats closer to success on Election Day.</p>
+        <p>The best way to turn out voters is through one-on-one conversations. We talk to inconsistent voters who are likely Democrats, so they do not need persuading on who to vote for. They just need a nudge, some information, and to hear from a real person. That means every eligible non-voter we are able to reach brings Democrats closer to success on Election Day.</p>
 
         <p>We started our voter turnout program in 2020 by knocking on doors and having face-to-face conversations with voters, but because of the worsening COVID-19 pandemic, we had to adjust our usual tactics. By August, we had converted our door-knocking program with over 1,200 staff in 18 states into a massive phone banking operation. By the end of the election, we had made over 40 million calls and contacted nearly one million voters.</p>
       </div>
@@ -425,7 +62,10 @@
     <div class="row">
       <div class="col">
         <h2>2020 Election Recap</h2>
-        <p>It is an often repeated cliche, but the 2020 Presidential Election was the most important election in a generation. Through the hard work of dedicated volunteers, organizers, activists, and campaign staffers across the country, Joe Biden defeated Donald Trump to win the presidency and the Democrats flipped the Senate. Democrats won 9 of the 18 states where Progressive Turnout Project had a voter turnout program, including Arizona, Georgia, and Wisconsin where razor thin margins determined the outcome of the elections. Voter turnout reached historic highs in many states and the country saw the highest voter turnout since 1900. Click on the table columns to sort the table by the column and to change the data shown on the map.</p>
+        <p>You've heard it before, and it's true: the 2020 presidential election was the most important election in a generation. Through the hard work of dedicated volunteers, organizers, activists, and campaign staffers across the country, Joe Biden defeated Donald Trump to win the presidency and the Democrats flipped the Senate.</p>
+
+        <p>Democrats won 9 of the 18 states where PTP had a voter turnout program — including Arizona, Georgia, and Wisconsin, where razor thin margins determined the outcome of the elections. Voter turnout reached historic highs in many states and the country saw the highest voter turnout since 1900.</p>
+        <p><em>Click on a table column to sort the table by that column and also to change the data shown on the map.</em></p>
       </div>
     </div>
 
@@ -448,7 +88,9 @@
       <div class="col">
         <h2>Our Program</h2>
         <h3>Target Voter Universe</h3>
-        <p>Our target states during the 2020 cycle were a combination of Presidential battleground states and states hosting competitive Senate races, in order to help accomplish two of the Democrats' major goals: elect Joe Biden and take back the Senate. Using modeling and voter file data, we target likely Democratic voters who turn out to the polls infrequently or irregularly. Our targets tend to be younger and skew more toward women and people of color than the general voting population. Click on the table columns to sort the table by the column.</p>
+        <p>Our target states during the 2020 cycle included Presidential battleground states and states with competitive Senate races, in order to help accomplish two of the Democrats' major goals: elect Joe Biden and take back the Senate.</p>
+        <p>Using modeling and voter file data, we target likely Democratic voters who turn out infrequently or irregularly. Our targets tend to be younger and skew more toward women and people of color than the general voting population.</p>
+        <p><em>Click on a table column to sort the table by that column.</em></p>
       </div>
     </div>
     <div class="row">
@@ -464,7 +106,7 @@
         <h3>Demographic Breakdown</h3>
         <p>The treemap allows you to visually drill down into each state’s target universe demographics and compare the relative sizes of intersecting demographics.</p>
 
-        <p>Select the desired state from the dropdown menu. Click the demographic buttons to add or remove that demographic from the treemap.</p>
+        <p><em>Select a state from the dropdown menu. Click the demographic buttons to add or remove that demographic from the treemap.</em></p>
       </div>
     </div>
 
@@ -482,7 +124,9 @@
     <div class="row">
       <div class="col">
         <h3>From Doors To Phones</h3>
-        <p>When PTP shifted our conversations from on the doors to phone calls in August of 2020, our voter universe in turn shifted in a dramatic way. While we still focused on contacting likely Democrats, especially those who are less likely to turnout to vote, we were suddenly limited to just the individuals for whom we had phone numbers. On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. This program shift also had an impact on the age and racial breakdown of our target voters. As our universe expanded beyond large metro areas, our universe became proportionately whiter. Moreover, by switching the phones, the share of our universe made up by voters 65+ expanded greatly in each state.
+        <p>When PTP shifted our conversations from on the doors to phone calls in August of 2020, our voter universe in turn shifted in a dramatic way. While we still focused on contacting likely Democrats, especially those who are less likely to turnout to vote, we were suddenly limited to just the individuals for whom we had phone numbers.</p>
+        <p>On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. This program shift also had an impact on the age and racial breakdown of our target voters. As our universe expanded beyond large metro areas, our universe became proportionately whiter. Moreover, by switching the phones, the share of our universe made up by voters 65+ expanded greatly in each state.
+        <p><em>Change the demographic shown by clicking the dropdown arrow in the chart title. Hover over the lines to see more detail about how a demographic group in a particular state changed between programs.</em></p>
       </div>
     </div>
 
@@ -496,7 +140,8 @@
 
     <div class="row">
       <div class="col">
-        <p>The map below gives a visual sense of the distribution of our targets during the canvass and phone phases of our program. One dot represents 1/2000th of the selected phase's target universe. Click a state on the map of the US to select a state where we had in person canvassing. Click the two buttons below the map of the selected to toggle between our canvassing and phone universes.</p>
+        <p>The map below gives a visual sense of the distribution of our targets during the canvass and phone phases of our program. One dot represents 1/2000th of the selected phase's target universe.</p>
+        <p><em>Click a state on the map of the US where we did in person canvassing. Click the two buttons below the state map to toggle between our canvassing and phone targets.</em></p>
       </div>
     </div>
 
@@ -512,7 +157,8 @@
     <div class="row">
       <h3>Field Team</h3>
       <div class="col-md-8">
-        <p>Our field team was a diverse group of 1,210 individuals working in 18 different states, initially based out of 68 different offices during in-person canvassing. A full-time field staffer typically made around four hours of calls five times each week, starting in the early evenings on Mondays, Tuesdays, and Wednesdays and in the late mornings on Saturdays and Sundays. Because of the differing election timelines in each state, as well as the different sizes of each state’s voter universe and field staff, nearby states were organized into calling regions based on timezone and regional similarity. For example, field staff in South Carolina, Georgia, and Florida were grouped into a Southeast calling region. While field staff in one state waited for vote-by-mail sign-ups in their state, they called into another state in their designated region where sign-ups had started. Furthermore, field staff in states with smaller voter universes could help call through the universes in a larger state while not exhausting their calling lists too early.</p>
+        <p>Our field team was a diverse group of 1,210 individuals working in 18 different states, initially based out of 69 different offices during in-person canvassing. A full-time field staffer typically made around four hours of calls five times each week, starting in the early evenings on Mondays, Tuesdays, and Wednesdays and in the late mornings on Saturdays and Sundays.</p>
+        <p>Because of the differing election timelines in each state, as well as the different sizes of each state’s voter universe and field staff, nearby states were organized into calling regions based on timezone and regional similarity. For example, field staff in South Carolina, Georgia, and Florida were grouped into a Southeast calling region. While field staff in one state waited for vote-by-mail sign-ups in their state, they called into another state in their designated region where sign-ups had started. Furthermore, field staff in states with smaller voter universes could help call through the universes in a larger state while not exhausting their calling lists too early.</p>
       </div>
       <div class="col-md-4 d-flex justify-content-center">
         <table id="field-staff-table"></table>
@@ -522,9 +168,12 @@
     <div class="row">
       <div class="col">
         <h3>Dialer Program Timeline</h3>
-        <p>Our dialer program launched on Saturday, August 15 and continued through Election Day on Tuesday, November 3rd. For the first eight weeks of calling, we asked voters if they would commit to vote in the November election. If possible in the voter’s state, our field team also asked voters to sign up to vote by mail, guiding them through the process of completing online forms or ballot request portals. .On Saturday, October 10th, we shifted from signing up voters to request mail-in ballots to helping voters make a plan to vote. We walked voters through their options, whether voting early in-person, voting by mail, or voting on Election Day, so that they felt ready and prepared to vote. We also continued to reach out to previously unattempted voters to turn them out to vote.</p>
+        <p>Our dialer program launched on Saturday, August 15 and continued through Election Day on Tuesday, November 3. For the first eight weeks of calling, we asked voters if they would commit to vote in the November election. If possible in the voter’s state, our field team also asked voters to sign up to vote by mail, guiding them through the process of completing online forms or ballot request portals.</p>
 
-        <p>The bar graphs below show the total number of dials, canvassed voters, commitments to vote, vote-by-mail sign-ups, and vote plans created for every day of our program. Hover your cursors over the bars to see the date and explore the exact numbers for that day. Click a state on the map to see our program metrics for that particular state.</p>
+        <p>On Saturday, October 10, we shifted from signing up voters to request mail-in ballots to helping voters make a plan to vote. We walked voters through their options, whether voting early in-person, voting by mail, or voting on Election Day, so that they felt ready and prepared to vote. We also continued to reach out to previously unattempted voters to turn them out to vote.</p>
+
+        <p>The bar graphs below show the total number of dials, canvassed voters, commitments to vote, vote-by-mail sign-ups, and vote plans created for every day of our program.</p>
+        <p><em>Click a state on the map of the US to see our program metrics for that particular state. Hover your cursors over the bars to explore our program in more detail on a particular day. Highlighted states indicate states that PTP staff called into on the selected day.</em></p>
       </div>
     </div>
 
@@ -568,7 +217,9 @@
       <div class="col">
         <h2>Our Results</h2>
         <h3>Impact</h3>
-        <p>We made more than 40 million dials and successfully canvassed over 900 thousand voters over the course of 12 weeks. Voter turnout in each state among voters we attempted was greater than the actual turnout in 13 out of 18 of those states, while the turnout in each state among our canvassed voters greatly exceeded actual turnout in all of those states. Given how close the election was in certain states, every dial mattered. In Arizona, where the election was decided by just over 10 thousand votes, the number of commitments to vote we received was over triple Biden’s margin of victory!</p>
+        <p>We made more than 40 million dials and successfully canvassed over 900,000 voters over the course of 12 weeks. In 13 of our 18 states, the voters we attempted turned out at a higher rate than the overall turnout. In all 18 of those states, the voters we successfully canvassed turned out at a much higher rate.</p>
+        <p>Given how close the election was in certain states, every dial mattered. In Arizona, whose 11 electoral votes were decided by a margin of just over 10,000, the number of commitments to vote we received was over triple Joe Biden’s margin of victory!</p>
+        <p><em>Click on a table column to sort the table by that column.</em></p>
       </div>
     </div>
     <div id="impact" class="row">
@@ -580,8 +231,10 @@
     <div class="row">
       <div class="col">
         <h3>Efficacy of outreach over time</h3>
-        <p>As the election approached, our success in contacting voters trended downward across each of our calling regions, while the rate at which voters did not pick up their phones steadily rose. It is likely that many voters came to expect political calls and simply did not answer phone calls from unknown numbers or unfamiliar caller IDs, rather than even answer the call and ask to be removed from the calling list. Interestingly, the rate at which voters refused to engage with us remained stable from week to week. Unlike many voter turnout programs, PTP is unique in launching its program early in the election cycle. Our observed trends demonstrate the importance of starting voter contact early, especially to cut through the oversaturation of political outreach close to Election Day.</p>
+        <p>As the election approached, our success in contacting voters (<strong>contact rate</strong>) trended downward across each of our calling regions, while the rate at which voters did not pick up their phones (<strong>not home rate</strong>) steadily rose. It is likely that many voters came to expect political calls and simply did not answer phone calls from unknown numbers or unfamiliar caller IDs, rather than even answer the call and ask to be removed from the calling list.</p>
+        <p>Interestingly, the rate at which voters refused to engage with us (<strong>refusal rate</strong>) remained stable from week to week. PTP launches its voter turnout program much earlier in the election cycle than most — and our observed trends support that strategy, demonstrating the importance of starting voter contact early, especially to cut through the oversaturation of political outreach close to Election Day.</p>
       </div>
+      <p><em>Hover over an individual state or a line on one of the charts to bring it into focus and highlight the states associated with that calling region.</em></p>
     </div>
 
     <div class="row align-items-center">
@@ -602,8 +255,10 @@
 
     <div class="row">
       <div class="col">
-        <p>Technology has greatly improved the efficiency of voter outreach over the past decade. Done are the days of campaign volunteers manually dialing phone numbers on a landline to talk with voters! Progressive Turnout Project was able to make 40 million calls over the course of our dialer program thanks to <a href="https://www.thrutalk.io/">ThruTalk</a>, a dialer platform that can legally call both cell phones and landlines near the speed of a predictive dialer. With enough callers on the line, the dialer speeds made it easy to call through our entire target voter universe in smaller states in one or two days. But this does not mean that our outreach had the same efficacy with every pass of our target universe. After around three or four attempts at contact, attempting the same voters again did not significantly increase the total proportion of targets who were contacted.</p>
+        <p>Technology has greatly improved the efficiency of voter outreach over the past decade. Gone are the days of campaign volunteers manually dialing phone numbers on a landline to talk with voters! Progressive Turnout Project was able to make 40 million calls over the course of our dialer program thanks to ThruTalk, a dialer platform that can legally call both cell phones and landlines near the speed of a predictive dialer.</p>
+        <p>With enough PTP callers on the line, the dialer speeds made it easy to call through our entire target voter universe in smaller states in one or two days. But this does not mean that our outreach had the same efficacy with every pass of our target universe. After around three or four attempts at contact, attempting the same voters again did not significantly increase the total proportion of targets who were contacted.</p>
       </div>
+      <p><em>Hover over a line on the chart to bring it into focus.</em></p>
     </div>
 
     <div class="row align-items-center">
@@ -622,7 +277,7 @@
     <div class="row">
       <div class="col">
         <h2>Acknowledgements</h2>
-        <p>This page was created by Sabrina Chan. Special thanks to Anastasia Scourtes for her support and thoughtful advice throughout the creation of this project and to the Progressive Turnout Project team for all of their feedback. The data used in this project was processed using <a href="https://www.python.org/">Python</a>, <a href="https://pandas.pydata.org/">pandas</a>, and <a href="https://jupyter.org/">Jupyter</a>. This project page was created using <a href="https://d3js.org/">D3</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, and <a href="https://d3-annotation.susielu.com/">D3-Annotation</a>. Map tiles by <a href="https://carto.com/">CARTO</a> with data by <a href="https://openstreetmap.org/">OpenStreetMap</a>, under ODbL.
+        <p>This page was created by Sabrina Chan. Special thanks to Anastasia Scourtes for her support and thoughtful advice throughout the creation of this project and to the Progressive Turnout Project team for all of their feedback. The data used in this project was processed using <a href="https://www.python.org/">Python</a>, <a href="https://pandas.pydata.org/">pandas</a>, and <a href="https://jupyter.org/">Jupyter</a>. This project page was created using <a href="https://d3js.org/">D3</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://d3-annotation.susielu.com/">D3-Annotation</a>, and <a href="https://github.com/VACLab/d3-tip">D3-tip</a>. Map tiles by <a href="https://carto.com/">CARTO</a> with data by <a href="https://openstreetmap.org/">OpenStreetMap</a>, under ODbL.
 
         The source code for this project is available on GitHub.
         </p>

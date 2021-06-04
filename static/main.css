@@ -1,0 +1,427 @@
+@font-face{
+  font-family: "alternate-gothic-no-2-d";
+  src: url('font/Alternate Gothic No2 D Regular.ttf');
+}
+
+body {
+  font-family: "Proxima Nova", Arial;
+}
+
+h2 {
+  color: #1cb4f0;
+  font-family: "alternate-gothic-no-2-d", Helvetica, Sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "alternate-gothic-no-2-d", Helvetica, Sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div.row {
+  margin-bottom: 20px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.callout {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.callout p span {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  background: #1cb4f0;
+}
+
+.state-path {
+  stroke: #000;
+  stroke-width: 0.25px;
+}
+
+.state-path.active {
+  stroke-width: 1.5px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table th {
+  background: white;
+  box-shadow: 0px 1.5px 0px 0px black;
+}
+
+table thead tr th {
+  position: sticky;
+  top: 0;
+}
+
+table tr:nth-child(even) {
+  background: #EEE;
+}
+
+table tr:hover {
+  background: lightyellow;
+}
+
+table tfoot {
+  font-weight: bold;
+}
+
+.state-row.active {
+  background: lightyellow;
+}
+
+
+#election-results-table {
+  width: 100%;
+  min-width: 336px;
+  max-width: 400px;
+  overflow-x: scroll;
+}
+
+th.col.active {
+  color: #f62338;
+}
+
+#election-results-table .col {
+  width: 15%;
+  text-align: right;
+}
+
+#election-results-table .col-state  {
+  text-align: left;
+  width: 25%;
+}
+
+#targets {
+  overflow-x: scroll;
+}
+
+#targets-table {
+  width: 100%;
+  min-width: 696px;
+}
+
+#targets-table .col {
+  text-align: right;
+}
+
+#targets-table .col-statecode{
+  text-align: left;
+  width: 12%;
+}
+
+#targets-table .col-universe{
+  width: 12%;
+}
+
+#targets-table .col-avg_age{
+  width: 11%;
+}
+
+#targets-table .col-under_35_pct{
+  width: 10%;
+}
+
+#targets-table .col-f_pct{
+  width: 10%;
+}
+
+#targets-table .col-poc_pct{
+  width: 15%;
+}
+
+#targets-table .col-rural_pct{
+  width: 10%;
+}
+
+#targets-table .col-suburban_pct{
+  width: 10%;
+}
+
+#targets-table .col-urban_pct{
+  width: 10%;
+}
+
+tspan.negative-slope {
+  fill: #f62338;
+}
+
+.buttonDemographic.active {
+  background: gold;
+}
+
+#selectDemographics {
+  border: 1px solid transparent;
+  outline: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  text-align-last: right;
+  cursor: pointer;
+}
+
+#selectDemographics option {
+  direction: rtl;
+}
+
+circle {
+  stroke: none;
+  fill: black;
+}
+
+.text-button {
+  cursor: pointer;
+}
+
+.text-button.active {
+  cursor: default;
+}
+
+.text-button rect {
+  fill: #1cb4f0;
+  fill-opacity: 0.5;
+  box-shadow: 0 3px 0 #6ea140;  
+}
+
+.text-button.active rect{
+  fill-opacity: 1;
+}
+
+#field-staff-table {
+  width: 100%;
+  max-width: 300px;
+}
+
+#field-staff-table .col-state {
+  text-align: left;
+  width: 40%;
+}
+
+#field-staff-table .col-calling-region {
+  text-align: left;
+  width: 35%;
+}
+
+#field-staff-table .col-field_staff {
+  text-align: right;
+  width: 25%;
+}
+
+
+.x.axis path {
+  stroke: none;
+}
+
+.secondary.axis text {
+  font-size: 7px;
+}
+
+.state.active {
+  fill: #1cb4f0;
+}
+
+.line.active {
+  stroke-width: 5px;
+}
+
+#metrics-table {
+  width: 200px;
+}
+
+.col-1  {
+  text-align: left;
+  width: 50%;
+}
+
+.col-2 {
+  width: 50%;
+  text-align: right;
+}
+
+#impact {
+  overflow-x: scroll;
+}
+
+#impact-table {
+  width: 100%;
+  min-width: 696px;
+}
+
+#impact-table .col {
+  text-align: right;
+}
+
+#impact-table .col-statecode {
+  text-align: left;
+  width: 14%
+}
+
+#impact-table .col-turnout_attempted {
+  text-align: right;
+  width: 13%;
+}
+
+#impact-table .col-turnout_canvassed {
+  text-align: right;
+  width: 13%;
+}
+
+#impact-table .col-dials {
+  text-align: right;
+  width: 10%;
+}
+
+#impact-table .col-canvassed {
+  text-align: right;
+  width: 10%;
+}
+
+#impact-table .col-ctvs {
+  text-align: right;
+  width: 10%;
+}
+
+#impact-table .col-vbms {
+  text-align: right;
+  width: 10%;
+}
+
+#impact-table .col-vote_plan {
+  text-align: right;
+  width: 10%;
+}
+
+#impact-table .col-dialer_minutes {
+  text-align: right;
+  width: 10%;
+}
+
+path.line {
+  fill: none;
+}
+
+.x.axis path {
+  stroke: none;
+}
+
+.secondary.axis text {
+  font-size: 7px;
+}
+
+.annotation text {
+  font-size: 0.5em;
+}
+
+.label--top text {
+  text-anchor: middle;
+  font-size: 0.5em;
+  opacity: 1;
+}
+
+.label--under text {
+  font-size: 0.5em;
+  stroke: #eee;
+  opacity: 1;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+
+.annotation.label.active text {
+  font-size: 0.75em;
+}
+
+.bar {
+  opacity: 0;
+}
+
+.bar.active, .bar.All {
+  opacity: 1;
+}
+
+.state.active {
+  fill: #1cb4f0;
+}
+
+.geoshift-selector {
+  fill-opacity: 0;
+}
+
+.geoshift-selector.active {
+  fill-opacity: 0.5;
+}
+
+.line.active {
+  stroke-width: 4px;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: white;
+  color: #fff;
+  border-radius: 2px;
+  font-color: black;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px #888888;
+}
+
+.d3-tip table {
+  color: black;
+}
+
+.d3-tip table th {
+  background: none;
+  box-shadow: 0px 1px 0px 0px #ccc;
+  text-align: left;
+  padding: 5px;
+}
+
+.d3-tip table tr {
+  background: none;
+}
+
+.d3-tip table td {
+  padding: 3px 5px;
+  text-align: left;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.d3-tip table td.tooltip-note {
+  font-size: 10px;
+  padding-top: 10px;
+}

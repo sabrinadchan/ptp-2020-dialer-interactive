@@ -193,16 +193,6 @@
           .attr("transform", "translate(0," + (pmChartHeight + 15) + ")")
           .call(xAxisSecondary);
 
-      chartSvg.append("g")
-          .attr("class", "y axis")
-          .call(yAxis)
-          .call(g => g.select("text").clone()
-            .attr("x", 3)
-            .attr("y", -pmChartHeight + 2)
-            .attr("text-anchor", "start")
-            .attr("font-weight", "bold")
-            .html(metric == "vote plan" ? `<tspan fill="red">vbms</tspan> / ${metric}` : metric));
-
       chartSvg.append("line")
           .attr("class", "focus")
           .attr("stroke", "green")
@@ -216,13 +206,17 @@
 
     function update(data, state) {
       d3.selectAll(".program-metrics-chart rect").remove();
+      d3.selectAll(".program-metrics-chart g.y.axis").remove();
+      d3.selectAll(".program-metrics-chart g.y.axis text").remove();
 
       for (var i = divs.length - 1; i >= 0; i--) {
-        var metric = divMapper[divs[i]];
+        var metric = divMapper[divs[i]],
+            metricMax = d3.max(data, d => d[1][metric]);
 
-        y.domain([0, d3.max(byDate, d => d[1][metric])]).nice();
+        if (!metricMax) metricMax = d3.max(data, d => d[1]["vbms"]);
+        y.domain([0, metricMax]).nice();
 
-        var chartSvg = d3.select(`#svg-${divs[i]}`)
+        var chartSvg = d3.select(`#svg-${divs[i]}`);
 
         chartSvg.append("g")
             .selectAll("rect")
@@ -240,12 +234,22 @@
             .selectAll("rect")
             .data(data)
             .join("rect")
-              .attr("fill", "red")
+              .attr("fill", "#f62338")
               .attr("x", d => x(d[0]))
               .attr("y", d => y(d[1]["vbms"]))
               .attr("width", d => 4)
               .attr("height", d => pmChartHeight - y(d[1]["vbms"]))
         }
+
+        chartSvg.append("g")
+          .attr("class", "y axis")
+          .call(yAxis)
+          .call(g => g.select("text").clone()
+            .attr("x", 3)
+            .attr("y", -pmChartHeight + 2)
+            .attr("text-anchor", "start")
+            .attr("font-weight", "bold")
+            .html(metric == "vote plan" ? `<tspan fill="#f62338">vbms</tspan> / ${metric}` : metric));
 
         chartSvg.append("rect")
             .style("fill", "none")
@@ -314,7 +318,7 @@
               .attr("x", x1 + 3)
               .attr("y", -3)
               .attr("font-size", "8px")
-              .attr("fill", metric == "vote plan" && selectedData[1][metric] < selectedData[1]["vbms"] ? "red" : "black")
+              .attr("fill", metric == "vote plan" && selectedData[1][metric] < selectedData[1]["vbms"] ? "#f62338" : "black")
               .text(metric == "vote plan" && selectedData[1][metric] < selectedData[1]["vbms"] ? formatNumber(selectedData[1]["vbms"]) : formatNumber(selectedData[1][metric]));
         }
       }
