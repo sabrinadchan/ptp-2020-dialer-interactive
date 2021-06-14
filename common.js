@@ -1,5 +1,5 @@
 const fips_to_state = {
-  "All": "All States",
+  "All": "All",
   "01": "AL",
   "04": "AZ",
   "08": "CO",

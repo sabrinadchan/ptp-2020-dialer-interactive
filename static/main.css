@@ -30,6 +30,16 @@ div.row {
   margin-bottom: 20px;
 }
 
+div.section {
+  margin-bottom: 50px;
+}
+
+#logo {
+  height: auto;
+  width: 100%;
+  max-width: 540px;
+}
+
 .clickable {
   cursor: pointer;
 }
@@ -375,7 +385,6 @@ path.line {
   line-height: 1;
   padding: 12px;
   background: white;
-  color: #fff;
   border-radius: 2px;
   font-color: black;
   text-align: center;

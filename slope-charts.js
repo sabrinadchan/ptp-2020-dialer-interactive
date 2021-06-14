@@ -23,7 +23,6 @@
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(d => `<table><tr><th colspan="3">${d.name} voters</th></tr><tr><td>canvass</td><td></td><td>phones</td></tr><tr><td>${formatPercent(d.values[0])}</td><td>→</td><td>${formatPercent(d.values[1])}</td></tr><tr><td colspan="3" class="tooltip-note">(${d3.format(".1f")((d.values[1] - d.values[0]) * 100)}pp change)</td></tr></table>`);
-      // <tr><td>canvass</td><td></td><td>phones</td></tr>
 
   const canvassStates = [
       {name: "All States", abbr: "All"},
@@ -52,7 +51,7 @@
       .attr("value", d => d)
       .text(d => d.charAt(0).toUpperCase() + d.slice(1));
 
-  const removeDemos = ["Native-Am", "U", "Unknown", "Uncoded", "Asian"]//, "White", "Black", "Latino"] // native-am in MT and AZ?
+  const removeDemos = ["Native Am.", "Unk", "Unknown", "Uncoded", "Asian"]//, "White", "Black", "Latino"] // native-am in MT and AZ?
   Promise.all([
     d3.tsv("data/program/demographic-change.tsv"),
   ])
@@ -162,7 +161,6 @@
                   .text(d => d3.format(".0%")(d))
                   .call(halo)
             )
-
 
         svg.append("g")
             .attr("transform", `translate(${width / 2},${height + margin.bottom / 2})`)

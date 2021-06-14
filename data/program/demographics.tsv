@@ -1,0 +1,1765 @@
+state	age	sex	race	counts
+AL	18-24	F	Black	36535
+AL	18-24	F	Asian	725
+AL	18-24	F	White	11076
+AL	18-24	F	Latino	1643
+AL	18-24	F	Native Am	142
+AL	18-24	F	Unknown Race	858
+AL	18-24	M	Black	30219
+AL	18-24	M	Asian	477
+AL	18-24	M	White	6380
+AL	18-24	M	Latino	1062
+AL	18-24	M	Native Am	86
+AL	18-24	M	Unknown Race	461
+AL	18-24	Unknown Sex	Black	75
+AL	18-24	Unknown Sex	Asian	1
+AL	18-24	Unknown Sex	White	11
+AL	18-24	Unknown Sex	Native Am	2
+AL	18-24	Unknown Sex	Unknown Race	3
+AL	25-34	F	Black	63796
+AL	25-34	F	Asian	875
+AL	25-34	F	White	20411
+AL	25-34	F	Latino	1947
+AL	25-34	F	Native Am	216
+AL	25-34	F	Unknown Race	1284
+AL	25-34	M	Black	48408
+AL	25-34	M	Asian	624
+AL	25-34	M	White	11409
+AL	25-34	M	Latino	1060
+AL	25-34	M	Native Am	125
+AL	25-34	M	Unknown Race	801
+AL	25-34	Unknown Sex	Black	56
+AL	25-34	Unknown Sex	Asian	2
+AL	25-34	Unknown Sex	White	6
+AL	25-34	Unknown Sex	Latino	1
+AL	25-34	Unknown Sex	Unknown Race	4
+AL	35-49	F	Black	88243
+AL	35-49	F	Asian	1510
+AL	35-49	F	White	18612
+AL	35-49	F	Latino	1542
+AL	35-49	F	Native Am	281
+AL	35-49	F	Unknown Race	1351
+AL	35-49	M	Black	59530
+AL	35-49	M	Asian	827
+AL	35-49	M	White	9938
+AL	35-49	M	Latino	856
+AL	35-49	M	Native Am	119
+AL	35-49	M	Unknown Race	853
+AL	35-49	Unknown Sex	Black	29
+AL	35-49	Unknown Sex	Asian	4
+AL	35-49	Unknown Sex	White	5
+AL	35-49	Unknown Sex	Native Am	1
+AL	35-49	Unknown Sex	Unknown Race	6
+AL	50-64	F	Black	84059
+AL	50-64	F	Asian	1141
+AL	50-64	F	White	17952
+AL	50-64	F	Latino	821
+AL	50-64	F	Native Am	258
+AL	50-64	F	Unknown Race	810
+AL	50-64	M	Black	58089
+AL	50-64	M	Asian	611
+AL	50-64	M	White	10350
+AL	50-64	M	Latino	579
+AL	50-64	M	Native Am	103
+AL	50-64	M	Unknown Race	523
+AL	50-64	Unknown Sex	Black	13
+AL	50-64	Unknown Sex	Asian	3
+AL	50-64	Unknown Sex	White	3
+AL	50-64	Unknown Sex	Unknown Race	1
+AL	65+	F	Black	62367
+AL	65+	F	Asian	671
+AL	65+	F	White	20510
+AL	65+	F	Latino	333
+AL	65+	F	Native Am	144
+AL	65+	F	Unknown Race	634
+AL	65+	M	Black	38168
+AL	65+	M	Asian	356
+AL	65+	M	White	10057
+AL	65+	M	Latino	172
+AL	65+	M	Native Am	72
+AL	65+	M	Unknown Race	351
+AL	65+	Unknown Sex	Black	8
+AL	65+	Unknown Sex	Asian	1
+AL	65+	Unknown Sex	Unknown Race	1
+AL	Unknown Age	F	Black	1120
+AL	Unknown Age	F	Asian	27
+AL	Unknown Age	F	White	188
+AL	Unknown Age	F	Latino	58
+AL	Unknown Age	F	Native Am	3
+AL	Unknown Age	F	Unknown Race	32
+AL	Unknown Age	M	Black	899
+AL	Unknown Age	M	Asian	11
+AL	Unknown Age	M	White	95
+AL	Unknown Age	M	Latino	37
+AL	Unknown Age	M	Native Am	2
+AL	Unknown Age	M	Unknown Race	15
+AL	Unknown Age	Unknown Sex	Black	7
+AZ	18-24	F	Black	856
+AZ	18-24	F	Asian	568
+AZ	18-24	F	White	35618
+AZ	18-24	F	Latino	31459
+AZ	18-24	F	Native Am	1183
+AZ	18-24	F	Unknown Race	4100
+AZ	18-24	M	Black	777
+AZ	18-24	M	Asian	479
+AZ	18-24	M	White	29664
+AZ	18-24	M	Latino	28932
+AZ	18-24	M	Native Am	1078
+AZ	18-24	M	Unknown Race	3329
+AZ	18-24	Unknown Sex	Black	1583
+AZ	18-24	Unknown Sex	Asian	643
+AZ	18-24	Unknown Sex	White	22541
+AZ	18-24	Unknown Sex	Latino	12940
+AZ	18-24	Unknown Sex	Native Am	1447
+AZ	18-24	Unknown Sex	Unknown Race	2796
+AZ	25-34	F	Black	2131
+AZ	25-34	F	Asian	706
+AZ	25-34	F	White	70730
+AZ	25-34	F	Latino	45050
+AZ	25-34	F	Native Am	3446
+AZ	25-34	F	Unknown Race	6794
+AZ	25-34	M	Black	1611
+AZ	25-34	M	Asian	641
+AZ	25-34	M	White	58788
+AZ	25-34	M	Latino	36956
+AZ	25-34	M	Native Am	2851
+AZ	25-34	M	Unknown Race	5346
+AZ	25-34	Unknown Sex	Black	1444
+AZ	25-34	Unknown Sex	Asian	435
+AZ	25-34	Unknown Sex	White	13805
+AZ	25-34	Unknown Sex	Latino	5840
+AZ	25-34	Unknown Sex	Native Am	1326
+AZ	25-34	Unknown Sex	Unknown Race	2135
+AZ	35-49	F	Black	2675
+AZ	35-49	F	Asian	1050
+AZ	35-49	F	White	89449
+AZ	35-49	F	Latino	44163
+AZ	35-49	F	Native Am	4134
+AZ	35-49	F	Unknown Race	8592
+AZ	35-49	M	Black	1807
+AZ	35-49	M	Asian	777
+AZ	35-49	M	White	64081
+AZ	35-49	M	Latino	32652
+AZ	35-49	M	Native Am	3149
+AZ	35-49	M	Unknown Race	6182
+AZ	35-49	Unknown Sex	Black	1060
+AZ	35-49	Unknown Sex	Asian	620
+AZ	35-49	Unknown Sex	White	8509
+AZ	35-49	Unknown Sex	Latino	2796
+AZ	35-49	Unknown Sex	Native Am	751
+AZ	35-49	Unknown Sex	Unknown Race	1855
+AZ	50-64	F	Black	2239
+AZ	50-64	F	Asian	803
+AZ	50-64	F	White	100658
+AZ	50-64	F	Latino	33886
+AZ	50-64	F	Native Am	4102
+AZ	50-64	F	Unknown Race	7357
+AZ	50-64	M	Black	1525
+AZ	50-64	M	Asian	699
+AZ	50-64	M	White	65336
+AZ	50-64	M	Latino	28770
+AZ	50-64	M	Native Am	2944
+AZ	50-64	M	Unknown Race	5384
+AZ	50-64	Unknown Sex	Black	407
+AZ	50-64	Unknown Sex	Asian	422
+AZ	50-64	Unknown Sex	White	4461
+AZ	50-64	Unknown Sex	Latino	1312
+AZ	50-64	Unknown Sex	Native Am	217
+AZ	50-64	Unknown Sex	Unknown Race	1045
+AZ	65+	F	Black	1546
+AZ	65+	F	Asian	453
+AZ	65+	F	White	123868
+AZ	65+	F	Latino	24145
+AZ	65+	F	Native Am	2630
+AZ	65+	F	Unknown Race	5740
+AZ	65+	M	Black	1015
+AZ	65+	M	Asian	401
+AZ	65+	M	White	79899
+AZ	65+	M	Latino	21350
+AZ	65+	M	Native Am	1763
+AZ	65+	M	Unknown Race	4300
+AZ	65+	Unknown Sex	Black	193
+AZ	65+	Unknown Sex	Asian	232
+AZ	65+	Unknown Sex	White	3423
+AZ	65+	Unknown Sex	Latino	835
+AZ	65+	Unknown Sex	Native Am	89
+AZ	65+	Unknown Sex	Unknown Race	670
+AZ	Unknown Age	F	Black	47
+AZ	Unknown Age	F	Asian	47
+AZ	Unknown Age	F	White	2103
+AZ	Unknown Age	F	Latino	2104
+AZ	Unknown Age	F	Native Am	31
+AZ	Unknown Age	F	Unknown Race	244
+AZ	Unknown Age	M	Black	37
+AZ	Unknown Age	M	Asian	36
+AZ	Unknown Age	M	White	1433
+AZ	Unknown Age	M	Latino	1695
+AZ	Unknown Age	M	Native Am	28
+AZ	Unknown Age	M	Unknown Race	167
+AZ	Unknown Age	Unknown Sex	Black	119
+AZ	Unknown Age	Unknown Sex	Asian	66
+AZ	Unknown Age	Unknown Sex	White	1554
+AZ	Unknown Age	Unknown Sex	Latino	1200
+AZ	Unknown Age	Unknown Sex	Native Am	51
+AZ	Unknown Age	Unknown Sex	Unknown Race	197
+CO	18-24	F	Black	1819
+CO	18-24	F	Asian	698
+CO	18-24	F	White	47105
+CO	18-24	F	Latino	15170
+CO	18-24	F	Native Am	89
+CO	18-24	F	Unknown Race	4132
+CO	18-24	M	Black	1354
+CO	18-24	M	Asian	501
+CO	18-24	M	White	34052
+CO	18-24	M	Latino	11314
+CO	18-24	M	Native Am	49
+CO	18-24	M	Unknown Race	2887
+CO	18-24	Unknown Sex	Black	124
+CO	18-24	Unknown Sex	Asian	23
+CO	18-24	Unknown Sex	White	1002
+CO	18-24	Unknown Sex	Latino	326
+CO	18-24	Unknown Sex	Native Am	4
+CO	18-24	Unknown Sex	Unknown Race	107
+CO	25-34	F	Black	4041
+CO	25-34	F	Asian	961
+CO	25-34	F	White	103343
+CO	25-34	F	Latino	23480
+CO	25-34	F	Native Am	215
+CO	25-34	F	Unknown Race	7007
+CO	25-34	M	Black	3010
+CO	25-34	M	Asian	768
+CO	25-34	M	White	84936
+CO	25-34	M	Latino	16642
+CO	25-34	M	Native Am	134
+CO	25-34	M	Unknown Race	5009
+CO	25-34	Unknown Sex	Black	51
+CO	25-34	Unknown Sex	Asian	20
+CO	25-34	Unknown Sex	White	362
+CO	25-34	Unknown Sex	Latino	76
+CO	25-34	Unknown Sex	Native Am	2
+CO	25-34	Unknown Sex	Unknown Race	55
+CO	35-49	F	Black	4917
+CO	35-49	F	Asian	1302
+CO	35-49	F	White	129214
+CO	35-49	F	Latino	24755
+CO	35-49	F	Native Am	190
+CO	35-49	F	Unknown Race	8588
+CO	35-49	M	Black	3799
+CO	35-49	M	Asian	960
+CO	35-49	M	White	104187
+CO	35-49	M	Latino	17426
+CO	35-49	M	Native Am	159
+CO	35-49	M	Unknown Race	6196
+CO	35-49	Unknown Sex	Black	45
+CO	35-49	Unknown Sex	Asian	17
+CO	35-49	Unknown Sex	White	219
+CO	35-49	Unknown Sex	Latino	47
+CO	35-49	Unknown Sex	Native Am	1
+CO	35-49	Unknown Sex	Unknown Race	56
+CO	50-64	F	Black	3951
+CO	50-64	F	Asian	938
+CO	50-64	F	White	119385
+CO	50-64	F	Latino	18916
+CO	50-64	F	Native Am	163
+CO	50-64	F	Unknown Race	6257
+CO	50-64	M	Black	3226
+CO	50-64	M	Asian	795
+CO	50-64	M	White	84790
+CO	50-64	M	Latino	15270
+CO	50-64	M	Native Am	116
+CO	50-64	M	Unknown Race	4567
+CO	50-64	Unknown Sex	Black	24
+CO	50-64	Unknown Sex	Asian	11
+CO	50-64	Unknown Sex	White	100
+CO	50-64	Unknown Sex	Latino	24
+CO	50-64	Unknown Sex	Unknown Race	23
+CO	65+	F	Black	2904
+CO	65+	F	Asian	570
+CO	65+	F	White	119624
+CO	65+	F	Latino	14674
+CO	65+	F	Native Am	111
+CO	65+	F	Unknown Race	4554
+CO	65+	M	Black	1872
+CO	65+	M	Asian	464
+CO	65+	M	White	80366
+CO	65+	M	Latino	11636
+CO	65+	M	Native Am	73
+CO	65+	M	Unknown Race	3336
+CO	65+	Unknown Sex	Black	10
+CO	65+	Unknown Sex	Asian	14
+CO	65+	Unknown Sex	White	51
+CO	65+	Unknown Sex	Latino	26
+CO	65+	Unknown Sex	Unknown Race	20
+CO	Unknown Age	F	Black	125
+CO	Unknown Age	F	Asian	46
+CO	Unknown Age	F	White	2740
+CO	Unknown Age	F	Latino	958
+CO	Unknown Age	F	Native Am	6
+CO	Unknown Age	F	Unknown Race	213
+CO	Unknown Age	M	Black	80
+CO	Unknown Age	M	Asian	35
+CO	Unknown Age	M	White	2119
+CO	Unknown Age	M	Latino	759
+CO	Unknown Age	M	Unknown Race	167
+CO	Unknown Age	Unknown Sex	Black	17
+CO	Unknown Age	Unknown Sex	Asian	2
+CO	Unknown Age	Unknown Sex	White	103
+CO	Unknown Age	Unknown Sex	Latino	54
+CO	Unknown Age	Unknown Sex	Unknown Race	10
+FL	18-24	F	Black	85879
+FL	18-24	F	Asian	8728
+FL	18-24	F	White	94338
+FL	18-24	F	Latino	79651
+FL	18-24	F	Native Am	958
+FL	18-24	F	Unknown Race	15587
+FL	18-24	M	Black	70514
+FL	18-24	M	Asian	6253
+FL	18-24	M	White	62508
+FL	18-24	M	Latino	60557
+FL	18-24	M	Native Am	810
+FL	18-24	M	Unknown Race	11417
+FL	18-24	Unknown Sex	Black	4153
+FL	18-24	Unknown Sex	Asian	410
+FL	18-24	Unknown Sex	White	2534
+FL	18-24	Unknown Sex	Latino	1590
+FL	18-24	Unknown Sex	Native Am	31
+FL	18-24	Unknown Sex	Unknown Race	949
+FL	25-34	F	Black	178876
+FL	25-34	F	Asian	12221
+FL	25-34	F	White	187053
+FL	25-34	F	Latino	136987
+FL	25-34	F	Native Am	1716
+FL	25-34	F	Unknown Race	19642
+FL	25-34	M	Black	125736
+FL	25-34	M	Asian	9557
+FL	25-34	M	White	133513
+FL	25-34	M	Latino	99188
+FL	25-34	M	Native Am	1221
+FL	25-34	M	Unknown Race	14339
+FL	25-34	Unknown Sex	Black	1912
+FL	25-34	Unknown Sex	Asian	274
+FL	25-34	Unknown Sex	White	923
+FL	25-34	Unknown Sex	Latino	1051
+FL	25-34	Unknown Sex	Native Am	17
+FL	25-34	Unknown Sex	Unknown Race	536
+FL	35-49	F	Black	218009
+FL	35-49	F	Asian	16573
+FL	35-49	F	White	224922
+FL	35-49	F	Latino	156530
+FL	35-49	F	Native Am	1930
+FL	35-49	F	Unknown Race	19770
+FL	35-49	M	Black	137484
+FL	35-49	M	Asian	10819
+FL	35-49	M	White	150222
+FL	35-49	M	Latino	101989
+FL	35-49	M	Native Am	1260
+FL	35-49	M	Unknown Race	13847
+FL	35-49	Unknown Sex	Black	1106
+FL	35-49	Unknown Sex	Asian	280
+FL	35-49	Unknown Sex	White	630
+FL	35-49	Unknown Sex	Latino	873
+FL	35-49	Unknown Sex	Native Am	9
+FL	35-49	Unknown Sex	Unknown Race	371
+FL	50-64	F	Black	203946
+FL	50-64	F	Asian	13451
+FL	50-64	F	White	306944
+FL	50-64	F	Latino	128116
+FL	50-64	F	Native Am	2329
+FL	50-64	F	Unknown Race	16634
+FL	50-64	M	Black	138796
+FL	50-64	M	Asian	9470
+FL	50-64	M	White	200764
+FL	50-64	M	Latino	87789
+FL	50-64	M	Native Am	1526
+FL	50-64	M	Unknown Race	11806
+FL	50-64	Unknown Sex	Black	560
+FL	50-64	Unknown Sex	Asian	194
+FL	50-64	Unknown Sex	White	354
+FL	50-64	Unknown Sex	Latino	331
+FL	50-64	Unknown Sex	Native Am	5
+FL	50-64	Unknown Sex	Unknown Race	220
+FL	65+	F	Black	147791
+FL	65+	F	Asian	9066
+FL	65+	F	White	461901
+FL	65+	F	Latino	99045
+FL	65+	F	Native Am	2207
+FL	65+	F	Unknown Race	14080
+FL	65+	M	Black	96944
+FL	65+	M	Asian	6827
+FL	65+	M	White	292006
+FL	65+	M	Latino	64291
+FL	65+	M	Native Am	1364
+FL	65+	M	Unknown Race	9597
+FL	65+	Unknown Sex	Black	300
+FL	65+	Unknown Sex	Asian	103
+FL	65+	Unknown Sex	White	237
+FL	65+	Unknown Sex	Latino	217
+FL	65+	Unknown Sex	Native Am	4
+FL	65+	Unknown Sex	Unknown Race	127
+FL	Unknown Age	F	Black	4589
+FL	Unknown Age	F	Asian	693
+FL	Unknown Age	F	White	5198
+FL	Unknown Age	F	Latino	4404
+FL	Unknown Age	F	Native Am	47
+FL	Unknown Age	F	Unknown Race	985
+FL	Unknown Age	M	Black	3737
+FL	Unknown Age	M	Asian	423
+FL	Unknown Age	M	White	3218
+FL	Unknown Age	M	Latino	3076
+FL	Unknown Age	M	Native Am	43
+FL	Unknown Age	M	Unknown Race	684
+FL	Unknown Age	Unknown Sex	Black	397
+FL	Unknown Age	Unknown Sex	Asian	33
+FL	Unknown Age	Unknown Sex	White	213
+FL	Unknown Age	Unknown Sex	Latino	117
+FL	Unknown Age	Unknown Sex	Native Am	4
+FL	Unknown Age	Unknown Sex	Unknown Race	87
+GA	18-24	F	Black	44084
+GA	18-24	F	Asian	1936
+GA	18-24	F	White	16292
+GA	18-24	F	Latino	4385
+GA	18-24	F	Native Am	169
+GA	18-24	F	Unknown Race	2650
+GA	18-24	M	Black	38519
+GA	18-24	M	Asian	1275
+GA	18-24	M	White	10634
+GA	18-24	M	Latino	3122
+GA	18-24	M	Native Am	149
+GA	18-24	M	Unknown Race	1915
+GA	18-24	Unknown Sex	Black	148
+GA	18-24	Unknown Sex	Asian	12
+GA	18-24	Unknown Sex	White	25
+GA	18-24	Unknown Sex	Latino	4
+GA	18-24	Unknown Sex	Native Am	1
+GA	18-24	Unknown Sex	Unknown Race	7
+GA	25-34	F	Black	108379
+GA	25-34	F	Asian	3643
+GA	25-34	F	White	47273
+GA	25-34	F	Latino	6518
+GA	25-34	F	Native Am	328
+GA	25-34	F	Unknown Race	6137
+GA	25-34	M	Black	78109
+GA	25-34	M	Asian	2674
+GA	25-34	M	White	32703
+GA	25-34	M	Latino	4179
+GA	25-34	M	Native Am	319
+GA	25-34	M	Unknown Race	4094
+GA	25-34	Unknown Sex	Black	64
+GA	25-34	Unknown Sex	Asian	11
+GA	25-34	Unknown Sex	White	10
+GA	25-34	Unknown Sex	Latino	1
+GA	25-34	Unknown Sex	Unknown Race	8
+GA	35-49	F	Black	179294
+GA	35-49	F	Asian	4903
+GA	35-49	F	White	58578
+GA	35-49	F	Latino	6224
+GA	35-49	F	Native Am	408
+GA	35-49	F	Unknown Race	7058
+GA	35-49	M	Black	108116
+GA	35-49	M	Asian	3163
+GA	35-49	M	White	37200
+GA	35-49	M	Latino	3388
+GA	35-49	M	Native Am	306
+GA	35-49	M	Unknown Race	3899
+GA	35-49	Unknown Sex	Black	40
+GA	35-49	Unknown Sex	Asian	4
+GA	35-49	Unknown Sex	White	12
+GA	35-49	Unknown Sex	Latino	1
+GA	35-49	Unknown Sex	Unknown Race	2
+GA	50-64	F	Black	182630
+GA	50-64	F	Asian	3797
+GA	50-64	F	White	63604
+GA	50-64	F	Latino	4297
+GA	50-64	F	Native Am	349
+GA	50-64	F	Unknown Race	4706
+GA	50-64	M	Black	121050
+GA	50-64	M	Asian	2859
+GA	50-64	M	White	41356
+GA	50-64	M	Latino	3313
+GA	50-64	M	Native Am	243
+GA	50-64	M	Unknown Race	2875
+GA	50-64	Unknown Sex	Black	28
+GA	50-64	Unknown Sex	Asian	9
+GA	50-64	Unknown Sex	White	7
+GA	50-64	Unknown Sex	Latino	1
+GA	50-64	Unknown Sex	Native Am	1
+GA	50-64	Unknown Sex	Unknown Race	1
+GA	65+	F	Black	125870
+GA	65+	F	Asian	2451
+GA	65+	F	White	66382
+GA	65+	F	Latino	1704
+GA	65+	F	Native Am	177
+GA	65+	F	Unknown Race	2359
+GA	65+	M	Black	75066
+GA	65+	M	Asian	2026
+GA	65+	M	White	40213
+GA	65+	M	Latino	1370
+GA	65+	M	Native Am	103
+GA	65+	M	Unknown Race	1429
+GA	65+	Unknown Sex	Black	16
+GA	65+	Unknown Sex	Asian	2
+GA	65+	Unknown Sex	White	2
+GA	65+	Unknown Sex	Latino	1
+GA	65+	Unknown Sex	Unknown Race	5
+GA	Unknown Age	F	Black	2058
+GA	Unknown Age	F	Asian	113
+GA	Unknown Age	F	White	381
+GA	Unknown Age	F	Latino	254
+GA	Unknown Age	F	Native Am	9
+GA	Unknown Age	F	Unknown Race	162
+GA	Unknown Age	M	Black	1786
+GA	Unknown Age	M	Asian	67
+GA	Unknown Age	M	White	266
+GA	Unknown Age	M	Latino	202
+GA	Unknown Age	M	Native Am	8
+GA	Unknown Age	M	Unknown Race	115
+GA	Unknown Age	Unknown Sex	Black	17
+GA	Unknown Age	Unknown Sex	Latino	1
+GA	Unknown Age	Unknown Sex	Unknown Race	1
+IA	18-24	F	Black	801
+IA	18-24	F	Asian	287
+IA	18-24	F	White	38939
+IA	18-24	F	Latino	1607
+IA	18-24	F	Native Am	40
+IA	18-24	F	Unknown Race	2584
+IA	18-24	M	Black	625
+IA	18-24	M	Asian	269
+IA	18-24	M	White	28408
+IA	18-24	M	Latino	1317
+IA	18-24	M	Native Am	27
+IA	18-24	M	Unknown Race	1939
+IA	25-34	F	Black	1636
+IA	25-34	F	Asian	367
+IA	25-34	F	White	65244
+IA	25-34	F	Latino	2102
+IA	25-34	F	Native Am	65
+IA	25-34	F	Unknown Race	3591
+IA	25-34	M	Black	1037
+IA	25-34	M	Asian	290
+IA	25-34	M	White	46507
+IA	25-34	M	Latino	1531
+IA	25-34	M	Native Am	55
+IA	25-34	M	Unknown Race	2392
+IA	35-49	F	Black	1632
+IA	35-49	F	Asian	406
+IA	35-49	F	White	76604
+IA	35-49	F	Latino	1796
+IA	35-49	F	Native Am	65
+IA	35-49	F	Unknown Race	3331
+IA	35-49	M	Black	978
+IA	35-49	M	Asian	311
+IA	35-49	M	White	52010
+IA	35-49	M	Latino	1159
+IA	35-49	M	Native Am	53
+IA	35-49	M	Unknown Race	2043
+IA	50-64	F	Black	1327
+IA	50-64	F	Asian	389
+IA	50-64	F	White	81346
+IA	50-64	F	Latino	1119
+IA	50-64	F	Native Am	57
+IA	50-64	F	Unknown Race	2038
+IA	50-64	M	Black	966
+IA	50-64	M	Asian	311
+IA	50-64	M	White	54332
+IA	50-64	M	Latino	1177
+IA	50-64	M	Native Am	55
+IA	50-64	M	Unknown Race	1445
+IA	65+	F	Black	894
+IA	65+	F	Asian	250
+IA	65+	F	White	90224
+IA	65+	F	Latino	443
+IA	65+	F	Native Am	41
+IA	65+	F	Unknown Race	1175
+IA	65+	M	Black	587
+IA	65+	M	Asian	182
+IA	65+	M	White	59043
+IA	65+	M	Latino	506
+IA	65+	M	Native Am	33
+IA	65+	M	Unknown Race	832
+IA	Unknown Age	F	Black	48
+IA	Unknown Age	F	Asian	31
+IA	Unknown Age	F	White	3091
+IA	Unknown Age	F	Latino	123
+IA	Unknown Age	F	Native Am	2
+IA	Unknown Age	F	Unknown Race	165
+IA	Unknown Age	M	Black	35
+IA	Unknown Age	M	Asian	29
+IA	Unknown Age	M	White	2134
+IA	Unknown Age	M	Latino	90
+IA	Unknown Age	M	Native Am	2
+IA	Unknown Age	M	Unknown Race	122
+KS	18-24	F	Black	1144
+KS	18-24	F	Asian	267
+KS	18-24	F	White	17276
+KS	18-24	F	Latino	2448
+KS	18-24	F	Native Am	29
+KS	18-24	F	Unknown Race	1641
+KS	18-24	M	Black	938
+KS	18-24	M	Asian	202
+KS	18-24	M	White	11592
+KS	18-24	M	Latino	1631
+KS	18-24	M	Native Am	23
+KS	18-24	M	Unknown Race	1043
+KS	18-24	Unknown Sex	Black	41
+KS	18-24	Unknown Sex	Asian	6
+KS	18-24	Unknown Sex	White	183
+KS	18-24	Unknown Sex	Latino	22
+KS	18-24	Unknown Sex	Unknown Race	24
+KS	25-34	F	Black	2310
+KS	25-34	F	Asian	228
+KS	25-34	F	White	24251
+KS	25-34	F	Latino	2395
+KS	25-34	F	Native Am	35
+KS	25-34	F	Unknown Race	1802
+KS	25-34	M	Black	1489
+KS	25-34	M	Asian	178
+KS	25-34	M	White	17452
+KS	25-34	M	Latino	1572
+KS	25-34	M	Native Am	29
+KS	25-34	M	Unknown Race	1154
+KS	25-34	Unknown Sex	Black	7
+KS	25-34	Unknown Sex	Asian	2
+KS	25-34	Unknown Sex	White	31
+KS	25-34	Unknown Sex	Latino	4
+KS	25-34	Unknown Sex	Unknown Race	12
+KS	35-49	F	Black	3407
+KS	35-49	F	Asian	369
+KS	35-49	F	White	34627
+KS	35-49	F	Latino	2595
+KS	35-49	F	Native Am	57
+KS	35-49	F	Unknown Race	2204
+KS	35-49	M	Black	1899
+KS	35-49	M	Asian	232
+KS	35-49	M	White	22436
+KS	35-49	M	Latino	1678
+KS	35-49	M	Native Am	30
+KS	35-49	M	Unknown Race	1359
+KS	35-49	Unknown Sex	Black	5
+KS	35-49	Unknown Sex	Asian	1
+KS	35-49	Unknown Sex	White	13
+KS	35-49	Unknown Sex	Latino	4
+KS	35-49	Unknown Sex	Unknown Race	8
+KS	50-64	F	Black	3781
+KS	50-64	F	Asian	322
+KS	50-64	F	White	42173
+KS	50-64	F	Latino	2080
+KS	50-64	F	Native Am	59
+KS	50-64	F	Unknown Race	1754
+KS	50-64	M	Black	2504
+KS	50-64	M	Asian	257
+KS	50-64	M	White	27690
+KS	50-64	M	Latino	1894
+KS	50-64	M	Native Am	45
+KS	50-64	M	Unknown Race	1288
+KS	50-64	Unknown Sex	Black	2
+KS	50-64	Unknown Sex	Asian	1
+KS	50-64	Unknown Sex	White	5
+KS	50-64	Unknown Sex	Unknown Race	1
+KS	65+	F	Black	3294
+KS	65+	F	Asian	166
+KS	65+	F	White	49863
+KS	65+	F	Latino	1424
+KS	65+	F	Native Am	58
+KS	65+	F	Unknown Race	1272
+KS	65+	M	Black	1894
+KS	65+	M	Asian	160
+KS	65+	M	White	31921
+KS	65+	M	Latino	1262
+KS	65+	M	Native Am	21
+KS	65+	M	Unknown Race	1002
+KS	65+	Unknown Sex	Black	1
+KS	65+	Unknown Sex	White	2
+KS	65+	Unknown Sex	Unknown Race	1
+KS	Unknown Age	F	Black	61
+KS	Unknown Age	F	Asian	28
+KS	Unknown Age	F	White	1224
+KS	Unknown Age	F	Latino	166
+KS	Unknown Age	F	Native Am	2
+KS	Unknown Age	F	Unknown Race	90
+KS	Unknown Age	M	Black	45
+KS	Unknown Age	M	Asian	16
+KS	Unknown Age	M	White	610
+KS	Unknown Age	M	Latino	100
+KS	Unknown Age	M	Native Am	1
+KS	Unknown Age	M	Unknown Race	54
+KS	Unknown Age	Unknown Sex	Black	9
+KS	Unknown Age	Unknown Sex	White	26
+KS	Unknown Age	Unknown Sex	Latino	10
+KS	Unknown Age	Unknown Sex	Unknown Race	6
+KY	18-24	F	Black	1369
+KY	18-24	F	Asian	86
+KY	18-24	F	White	12872
+KY	18-24	F	Latino	89
+KY	18-24	F	Native Am	1
+KY	18-24	F	Unknown Race	486
+KY	18-24	M	Black	1121
+KY	18-24	M	Asian	71
+KY	18-24	M	White	9204
+KY	18-24	M	Latino	83
+KY	18-24	M	Native Am	1
+KY	18-24	M	Unknown Race	393
+KY	18-24	Unknown Sex	Black	2
+KY	18-24	Unknown Sex	Asian	1
+KY	18-24	Unknown Sex	White	3
+KY	25-34	F	Black	3802
+KY	25-34	F	Asian	77
+KY	25-34	F	White	26728
+KY	25-34	F	Latino	160
+KY	25-34	F	Native Am	5
+KY	25-34	F	Unknown Race	855
+KY	25-34	M	Black	2723
+KY	25-34	M	Asian	110
+KY	25-34	M	White	22070
+KY	25-34	M	Latino	103
+KY	25-34	M	Native Am	1
+KY	25-34	M	Unknown Race	588
+KY	25-34	Unknown Sex	Black	1
+KY	35-49	F	Black	6656
+KY	35-49	F	Asian	170
+KY	35-49	F	White	52553
+KY	35-49	F	Latino	247
+KY	35-49	F	Native Am	6
+KY	35-49	F	Unknown Race	1453
+KY	35-49	M	Black	3879
+KY	35-49	M	Asian	133
+KY	35-49	M	White	37240
+KY	35-49	M	Latino	151
+KY	35-49	M	Native Am	8
+KY	35-49	M	Unknown Race	895
+KY	35-49	Unknown Sex	Black	1
+KY	50-64	F	Black	7836
+KY	50-64	F	Asian	154
+KY	50-64	F	White	71921
+KY	50-64	F	Latino	163
+KY	50-64	F	Native Am	10
+KY	50-64	F	Unknown Race	1180
+KY	50-64	M	Black	4917
+KY	50-64	M	Asian	173
+KY	50-64	M	White	48298
+KY	50-64	M	Latino	130
+KY	50-64	M	Native Am	9
+KY	50-64	M	Unknown Race	793
+KY	65+	F	Black	7906
+KY	65+	F	Asian	85
+KY	65+	F	White	92578
+KY	65+	F	Latino	82
+KY	65+	F	Native Am	6
+KY	65+	F	Unknown Race	820
+KY	65+	M	Black	4104
+KY	65+	M	Asian	86
+KY	65+	M	White	57749
+KY	65+	M	Latino	51
+KY	65+	M	Native Am	8
+KY	65+	M	Unknown Race	478
+KY	65+	Unknown Sex	Black	2
+KY	65+	Unknown Sex	White	1
+KY	Unknown Age	F	Black	92
+KY	Unknown Age	F	Asian	13
+KY	Unknown Age	F	White	1241
+KY	Unknown Age	F	Latino	6
+KY	Unknown Age	F	Unknown Race	44
+KY	Unknown Age	M	Black	78
+KY	Unknown Age	M	Asian	8
+KY	Unknown Age	M	White	681
+KY	Unknown Age	M	Latino	4
+KY	Unknown Age	M	Unknown Race	32
+KY	Unknown Age	Unknown Sex	White	7
+KY	Unknown Age	Unknown Sex	Unknown Race	1
+ME	18-24	F	Black	21
+ME	18-24	F	Asian	8
+ME	18-24	F	White	6712
+ME	18-24	F	Latino	9
+ME	18-24	F	Native Am	12
+ME	18-24	F	Unknown Race	132
+ME	18-24	M	Black	27
+ME	18-24	M	Asian	6
+ME	18-24	M	White	5068
+ME	18-24	M	Latino	8
+ME	18-24	M	Native Am	6
+ME	18-24	M	Unknown Race	129
+ME	18-24	Unknown Sex	Black	57
+ME	18-24	Unknown Sex	Asian	14
+ME	18-24	Unknown Sex	White	2183
+ME	18-24	Unknown Sex	Latino	2
+ME	18-24	Unknown Sex	Native Am	7
+ME	18-24	Unknown Sex	Unknown Race	89
+ME	25-34	F	Black	80
+ME	25-34	F	Asian	39
+ME	25-34	F	White	20480
+ME	25-34	F	Latino	29
+ME	25-34	F	Native Am	43
+ME	25-34	F	Unknown Race	448
+ME	25-34	M	Black	89
+ME	25-34	M	Asian	31
+ME	25-34	M	White	15250
+ME	25-34	M	Latino	23
+ME	25-34	M	Native Am	41
+ME	25-34	M	Unknown Race	330
+ME	25-34	Unknown Sex	Black	79
+ME	25-34	Unknown Sex	Asian	16
+ME	25-34	Unknown Sex	White	1373
+ME	25-34	Unknown Sex	Latino	11
+ME	25-34	Unknown Sex	Native Am	7
+ME	25-34	Unknown Sex	Unknown Race	126
+ME	35-49	F	Black	118
+ME	35-49	F	Asian	32
+ME	35-49	F	White	29579
+ME	35-49	F	Latino	29
+ME	35-49	F	Native Am	52
+ME	35-49	F	Unknown Race	562
+ME	35-49	M	Black	94
+ME	35-49	M	Asian	31
+ME	35-49	M	White	19554
+ME	35-49	M	Latino	20
+ME	35-49	M	Native Am	66
+ME	35-49	M	Unknown Race	373
+ME	35-49	Unknown Sex	Black	55
+ME	35-49	Unknown Sex	Asian	24
+ME	35-49	Unknown Sex	White	792
+ME	35-49	Unknown Sex	Latino	3
+ME	35-49	Unknown Sex	Native Am	6
+ME	35-49	Unknown Sex	Unknown Race	111
+ME	50-64	F	Black	98
+ME	50-64	F	Asian	28
+ME	50-64	F	White	39404
+ME	50-64	F	Latino	19
+ME	50-64	F	Native Am	58
+ME	50-64	F	Unknown Race	397
+ME	50-64	M	Black	71
+ME	50-64	M	Asian	22
+ME	50-64	M	White	25517
+ME	50-64	M	Latino	17
+ME	50-64	M	Native Am	42
+ME	50-64	M	Unknown Race	275
+ME	50-64	Unknown Sex	Black	35
+ME	50-64	Unknown Sex	Asian	14
+ME	50-64	Unknown Sex	White	414
+ME	50-64	Unknown Sex	Latino	1
+ME	50-64	Unknown Sex	Native Am	1
+ME	50-64	Unknown Sex	Unknown Race	71
+ME	65+	F	Black	58
+ME	65+	F	Asian	22
+ME	65+	F	White	48133
+ME	65+	F	Latino	7
+ME	65+	F	Native Am	34
+ME	65+	F	Unknown Race	363
+ME	65+	M	Black	35
+ME	65+	M	Asian	23
+ME	65+	M	White	31177
+ME	65+	M	Latino	10
+ME	65+	M	Native Am	23
+ME	65+	M	Unknown Race	234
+ME	65+	Unknown Sex	Black	17
+ME	65+	Unknown Sex	Asian	7
+ME	65+	Unknown Sex	White	413
+ME	65+	Unknown Sex	Unknown Race	23
+ME	Unknown Age	F	White	477
+ME	Unknown Age	F	Unknown Race	4
+ME	Unknown Age	M	Black	1
+ME	Unknown Age	M	White	324
+ME	Unknown Age	M	Unknown Race	6
+ME	Unknown Age	Unknown Sex	Black	2
+ME	Unknown Age	Unknown Sex	White	179
+ME	Unknown Age	Unknown Sex	Latino	1
+ME	Unknown Age	Unknown Sex	Native Am	1
+ME	Unknown Age	Unknown Sex	Unknown Race	4
+MI	18-24	F	Black	23849
+MI	18-24	F	Asian	2137
+MI	18-24	F	White	73931
+MI	18-24	F	Latino	3136
+MI	18-24	F	Native Am	113
+MI	18-24	F	Unknown Race	5223
+MI	18-24	M	Black	20006
+MI	18-24	M	Asian	1781
+MI	18-24	M	White	44780
+MI	18-24	M	Latino	2539
+MI	18-24	M	Native Am	72
+MI	18-24	M	Unknown Race	3772
+MI	18-24	Unknown Sex	Black	61
+MI	18-24	Unknown Sex	Asian	22
+MI	18-24	Unknown Sex	White	140
+MI	18-24	Unknown Sex	Latino	12
+MI	18-24	Unknown Sex	Unknown Race	20
+MI	25-34	F	Black	62095
+MI	25-34	F	Asian	2874
+MI	25-34	F	White	177458
+MI	25-34	F	Latino	4923
+MI	25-34	F	Native Am	227
+MI	25-34	F	Unknown Race	11404
+MI	25-34	M	Black	50944
+MI	25-34	M	Asian	2595
+MI	25-34	M	White	113161
+MI	25-34	M	Latino	3812
+MI	25-34	M	Native Am	132
+MI	25-34	M	Unknown Race	7645
+MI	25-34	Unknown Sex	Black	23
+MI	25-34	Unknown Sex	Asian	8
+MI	25-34	Unknown Sex	White	40
+MI	25-34	Unknown Sex	Latino	4
+MI	25-34	Unknown Sex	Unknown Race	9
+MI	35-49	F	Black	78166
+MI	35-49	F	Asian	3975
+MI	35-49	F	White	177025
+MI	35-49	F	Latino	5567
+MI	35-49	F	Native Am	281
+MI	35-49	F	Unknown Race	12572
+MI	35-49	M	Black	60745
+MI	35-49	M	Asian	3091
+MI	35-49	M	White	97479
+MI	35-49	M	Latino	4036
+MI	35-49	M	Native Am	159
+MI	35-49	M	Unknown Race	7574
+MI	35-49	Unknown Sex	Black	10
+MI	35-49	Unknown Sex	Asian	12
+MI	35-49	Unknown Sex	White	17
+MI	35-49	Unknown Sex	Latino	2
+MI	35-49	Unknown Sex	Unknown Race	6
+MI	50-64	F	Black	81811
+MI	50-64	F	Asian	3550
+MI	50-64	F	White	187414
+MI	50-64	F	Latino	4398
+MI	50-64	F	Native Am	275
+MI	50-64	F	Unknown Race	9476
+MI	50-64	M	Black	61165
+MI	50-64	M	Asian	3363
+MI	50-64	M	White	94969
+MI	50-64	M	Latino	3552
+MI	50-64	M	Native Am	152
+MI	50-64	M	Unknown Race	5624
+MI	50-64	Unknown Sex	Black	2
+MI	50-64	Unknown Sex	Asian	7
+MI	50-64	Unknown Sex	White	12
+MI	50-64	Unknown Sex	Unknown Race	2
+MI	65+	F	Black	67370
+MI	65+	F	Asian	1962
+MI	65+	F	White	179204
+MI	65+	F	Latino	2608
+MI	65+	F	Native Am	191
+MI	65+	F	Unknown Race	6128
+MI	65+	M	Black	41394
+MI	65+	M	Asian	1758
+MI	65+	M	White	93544
+MI	65+	M	Latino	1921
+MI	65+	M	Native Am	138
+MI	65+	M	Unknown Race	3505
+MI	65+	Unknown Sex	Black	2
+MI	65+	Unknown Sex	White	5
+MI	Unknown Age	F	Black	1302
+MI	Unknown Age	F	Asian	175
+MI	Unknown Age	F	White	3613
+MI	Unknown Age	F	Latino	206
+MI	Unknown Age	F	Native Am	6
+MI	Unknown Age	F	Unknown Race	298
+MI	Unknown Age	M	Black	1036
+MI	Unknown Age	M	Asian	180
+MI	Unknown Age	M	White	1762
+MI	Unknown Age	M	Latino	135
+MI	Unknown Age	M	Native Am	5
+MI	Unknown Age	M	Unknown Race	192
+MI	Unknown Age	Unknown Sex	Black	4
+MI	Unknown Age	Unknown Sex	Asian	2
+MI	Unknown Age	Unknown Sex	White	2
+MT	18-24	F	Black	3
+MT	18-24	F	Asian	4
+MT	18-24	F	White	3397
+MT	18-24	F	Latino	14
+MT	18-24	F	Native Am	97
+MT	18-24	F	Unknown Race	132
+MT	18-24	M	Black	3
+MT	18-24	M	Asian	4
+MT	18-24	M	White	3038
+MT	18-24	M	Latino	19
+MT	18-24	M	Native Am	86
+MT	18-24	M	Unknown Race	142
+MT	18-24	Unknown Sex	Black	3
+MT	18-24	Unknown Sex	Asian	1
+MT	18-24	Unknown Sex	White	1475
+MT	18-24	Unknown Sex	Latino	8
+MT	18-24	Unknown Sex	Native Am	94
+MT	18-24	Unknown Sex	Unknown Race	93
+MT	25-34	F	Black	14
+MT	25-34	F	Asian	11
+MT	25-34	F	White	8661
+MT	25-34	F	Latino	38
+MT	25-34	F	Native Am	398
+MT	25-34	F	Unknown Race	409
+MT	25-34	M	Black	11
+MT	25-34	M	Asian	8
+MT	25-34	M	White	6640
+MT	25-34	M	Latino	27
+MT	25-34	M	Native Am	327
+MT	25-34	M	Unknown Race	317
+MT	25-34	Unknown Sex	Black	4
+MT	25-34	Unknown Sex	Asian	7
+MT	25-34	Unknown Sex	White	638
+MT	25-34	Unknown Sex	Latino	4
+MT	25-34	Unknown Sex	Native Am	91
+MT	25-34	Unknown Sex	Unknown Race	72
+MT	35-49	F	Black	23
+MT	35-49	F	Asian	25
+MT	35-49	F	White	11897
+MT	35-49	F	Latino	60
+MT	35-49	F	Native Am	665
+MT	35-49	F	Unknown Race	627
+MT	35-49	M	Black	20
+MT	35-49	M	Asian	7
+MT	35-49	M	White	7616
+MT	35-49	M	Latino	44
+MT	35-49	M	Native Am	493
+MT	35-49	M	Unknown Race	410
+MT	35-49	Unknown Sex	Black	1
+MT	35-49	Unknown Sex	Asian	3
+MT	35-49	Unknown Sex	White	340
+MT	35-49	Unknown Sex	Latino	1
+MT	35-49	Unknown Sex	Native Am	39
+MT	35-49	Unknown Sex	Unknown Race	45
+MT	50-64	F	Black	28
+MT	50-64	F	Asian	29
+MT	50-64	F	White	13724
+MT	50-64	F	Latino	56
+MT	50-64	F	Native Am	752
+MT	50-64	F	Unknown Race	689
+MT	50-64	M	Black	23
+MT	50-64	M	Asian	10
+MT	50-64	M	White	7762
+MT	50-64	M	Latino	46
+MT	50-64	M	Native Am	531
+MT	50-64	M	Unknown Race	405
+MT	50-64	Unknown Sex	Black	5
+MT	50-64	Unknown Sex	White	144
+MT	50-64	Unknown Sex	Latino	2
+MT	50-64	Unknown Sex	Native Am	14
+MT	50-64	Unknown Sex	Unknown Race	21
+MT	65+	F	Black	37
+MT	65+	F	Asian	24
+MT	65+	F	White	16750
+MT	65+	F	Latino	72
+MT	65+	F	Native Am	490
+MT	65+	F	Unknown Race	554
+MT	65+	M	Black	39
+MT	65+	M	Asian	22
+MT	65+	M	White	9272
+MT	65+	M	Latino	56
+MT	65+	M	Native Am	331
+MT	65+	M	Unknown Race	308
+MT	65+	Unknown Sex	Asian	1
+MT	65+	Unknown Sex	White	103
+MT	65+	Unknown Sex	Latino	1
+MT	65+	Unknown Sex	Native Am	2
+MT	65+	Unknown Sex	Unknown Race	6
+MT	Unknown Age	F	White	151
+MT	Unknown Age	F	Native Am	5
+MT	Unknown Age	F	Unknown Race	8
+MT	Unknown Age	M	White	112
+MT	Unknown Age	M	Latino	2
+MT	Unknown Age	M	Native Am	3
+MT	Unknown Age	M	Unknown Race	4
+MT	Unknown Age	Unknown Sex	Black	1
+MT	Unknown Age	Unknown Sex	White	94
+MT	Unknown Age	Unknown Sex	Latino	1
+MT	Unknown Age	Unknown Sex	Native Am	7
+MT	Unknown Age	Unknown Sex	Unknown Race	4
+NC	18-24	F	Black	55140
+NC	18-24	F	Asian	3149
+NC	18-24	F	White	50680
+NC	18-24	F	Latino	13314
+NC	18-24	F	Native Am	1611
+NC	18-24	F	Unknown Race	7158
+NC	18-24	M	Black	49685
+NC	18-24	M	Asian	2511
+NC	18-24	M	White	35430
+NC	18-24	M	Latino	10756
+NC	18-24	M	Native Am	1349
+NC	18-24	M	Unknown Race	5765
+NC	18-24	Unknown Sex	Black	4066
+NC	18-24	Unknown Sex	Asian	127
+NC	18-24	Unknown Sex	White	2021
+NC	18-24	Unknown Sex	Latino	216
+NC	18-24	Unknown Sex	Native Am	22
+NC	18-24	Unknown Sex	Unknown Race	359
+NC	25-34	F	Black	93006
+NC	25-34	F	Asian	3661
+NC	25-34	F	White	81683
+NC	25-34	F	Latino	11113
+NC	25-34	F	Native Am	2088
+NC	25-34	F	Unknown Race	7734
+NC	25-34	M	Black	68542
+NC	25-34	M	Asian	2759
+NC	25-34	M	White	56790
+NC	25-34	M	Latino	7694
+NC	25-34	M	Native Am	1435
+NC	25-34	M	Unknown Race	5514
+NC	25-34	Unknown Sex	Black	1661
+NC	25-34	Unknown Sex	Asian	98
+NC	25-34	Unknown Sex	White	854
+NC	25-34	Unknown Sex	Latino	94
+NC	25-34	Unknown Sex	Native Am	11
+NC	25-34	Unknown Sex	Unknown Race	208
+NC	35-49	F	Black	115582
+NC	35-49	F	Asian	4165
+NC	35-49	F	White	94322
+NC	35-49	F	Latino	8731
+NC	35-49	F	Native Am	3040
+NC	35-49	F	Unknown Race	6340
+NC	35-49	M	Black	77928
+NC	35-49	M	Asian	2773
+NC	35-49	M	White	60158
+NC	35-49	M	Latino	5949
+NC	35-49	M	Native Am	1823
+NC	35-49	M	Unknown Race	4482
+NC	35-49	Unknown Sex	Black	773
+NC	35-49	Unknown Sex	Asian	102
+NC	35-49	Unknown Sex	White	318
+NC	35-49	Unknown Sex	Latino	45
+NC	35-49	Unknown Sex	Native Am	4
+NC	35-49	Unknown Sex	Unknown Race	87
+NC	50-64	F	Black	119718
+NC	50-64	F	Asian	2787
+NC	50-64	F	White	116287
+NC	50-64	F	Latino	5422
+NC	50-64	F	Native Am	2866
+NC	50-64	F	Unknown Race	4431
+NC	50-64	M	Black	86676
+NC	50-64	M	Asian	2410
+NC	50-64	M	White	75045
+NC	50-64	M	Latino	4651
+NC	50-64	M	Native Am	1970
+NC	50-64	M	Unknown Race	3610
+NC	50-64	Unknown Sex	Black	270
+NC	50-64	Unknown Sex	Asian	67
+NC	50-64	Unknown Sex	White	176
+NC	50-64	Unknown Sex	Latino	13
+NC	50-64	Unknown Sex	Native Am	3
+NC	50-64	Unknown Sex	Unknown Race	42
+NC	65+	F	Black	93812
+NC	65+	F	Asian	1411
+NC	65+	F	White	156347
+NC	65+	F	Latino	2232
+NC	65+	F	Native Am	2541
+NC	65+	F	Unknown Race	2665
+NC	65+	M	Black	57924
+NC	65+	M	Asian	1281
+NC	65+	M	White	98425
+NC	65+	M	Latino	1824
+NC	65+	M	Native Am	1691
+NC	65+	M	Unknown Race	2074
+NC	65+	Unknown Sex	Black	135
+NC	65+	Unknown Sex	Asian	31
+NC	65+	Unknown Sex	White	78
+NC	65+	Unknown Sex	Latino	11
+NC	65+	Unknown Sex	Native Am	4
+NC	65+	Unknown Sex	Unknown Race	25
+NC	Unknown Age	F	Black	4184
+NC	Unknown Age	F	Asian	244
+NC	Unknown Age	F	White	3068
+NC	Unknown Age	F	Latino	1182
+NC	Unknown Age	F	Native Am	133
+NC	Unknown Age	F	Unknown Race	565
+NC	Unknown Age	M	Black	3960
+NC	Unknown Age	M	Asian	224
+NC	Unknown Age	M	White	2436
+NC	Unknown Age	M	Latino	1124
+NC	Unknown Age	M	Native Am	124
+NC	Unknown Age	M	Unknown Race	509
+NC	Unknown Age	Unknown Sex	Black	538
+NC	Unknown Age	Unknown Sex	Asian	13
+NC	Unknown Age	Unknown Sex	White	175
+NC	Unknown Age	Unknown Sex	Latino	40
+NC	Unknown Age	Unknown Sex	Native Am	13
+NC	Unknown Age	Unknown Sex	Unknown Race	42
+NE	18-24	F	Black	244
+NE	18-24	F	Asian	53
+NE	18-24	F	White	6852
+NE	18-24	F	Latino	944
+NE	18-24	F	Native Am	16
+NE	18-24	F	Unknown Race	589
+NE	18-24	M	Black	217
+NE	18-24	M	Asian	43
+NE	18-24	M	White	5229
+NE	18-24	M	Latino	697
+NE	18-24	M	Native Am	10
+NE	18-24	M	Unknown Race	434
+NE	18-24	Unknown Sex	Black	505
+NE	18-24	Unknown Sex	Asian	39
+NE	18-24	Unknown Sex	White	2875
+NE	18-24	Unknown Sex	Latino	250
+NE	18-24	Unknown Sex	Native Am	13
+NE	18-24	Unknown Sex	Unknown Race	239
+NE	25-34	F	Black	1253
+NE	25-34	F	Asian	81
+NE	25-34	F	White	17346
+NE	25-34	F	Latino	1328
+NE	25-34	F	Native Am	102
+NE	25-34	F	Unknown Race	1277
+NE	25-34	M	Black	779
+NE	25-34	M	Asian	66
+NE	25-34	M	White	13012
+NE	25-34	M	Latino	895
+NE	25-34	M	Native Am	57
+NE	25-34	M	Unknown Race	791
+NE	25-34	Unknown Sex	Black	225
+NE	25-34	Unknown Sex	Asian	34
+NE	25-34	Unknown Sex	White	897
+NE	25-34	Unknown Sex	Latino	78
+NE	25-34	Unknown Sex	Native Am	12
+NE	25-34	Unknown Sex	Unknown Race	159
+NE	35-49	F	Black	1880
+NE	35-49	F	Asian	103
+NE	35-49	F	White	27851
+NE	35-49	F	Latino	1673
+NE	35-49	F	Native Am	130
+NE	35-49	F	Unknown Race	1546
+NE	35-49	M	Black	1113
+NE	35-49	M	Asian	92
+NE	35-49	M	White	19289
+NE	35-49	M	Latino	1045
+NE	35-49	M	Native Am	72
+NE	35-49	M	Unknown Race	1004
+NE	35-49	Unknown Sex	Black	126
+NE	35-49	Unknown Sex	Asian	37
+NE	35-49	Unknown Sex	White	608
+NE	35-49	Unknown Sex	Latino	63
+NE	35-49	Unknown Sex	Native Am	6
+NE	35-49	Unknown Sex	Unknown Race	141
+NE	50-64	F	Black	1947
+NE	50-64	F	Asian	71
+NE	50-64	F	White	32123
+NE	50-64	F	Latino	1295
+NE	50-64	F	Native Am	142
+NE	50-64	F	Unknown Race	1103
+NE	50-64	M	Black	1246
+NE	50-64	M	Asian	62
+NE	50-64	M	White	21872
+NE	50-64	M	Latino	1350
+NE	50-64	M	Native Am	68
+NE	50-64	M	Unknown Race	852
+NE	50-64	Unknown Sex	Black	63
+NE	50-64	Unknown Sex	Asian	17
+NE	50-64	Unknown Sex	White	306
+NE	50-64	Unknown Sex	Latino	40
+NE	50-64	Unknown Sex	Native Am	1
+NE	50-64	Unknown Sex	Unknown Race	65
+NE	65+	F	Black	1651
+NE	65+	F	Asian	63
+NE	65+	F	White	39515
+NE	65+	F	Latino	737
+NE	65+	F	Native Am	85
+NE	65+	F	Unknown Race	758
+NE	65+	M	Black	929
+NE	65+	M	Asian	69
+NE	65+	M	White	25871
+NE	65+	M	Latino	718
+NE	65+	M	Native Am	40
+NE	65+	M	Unknown Race	588
+NE	65+	Unknown Sex	Black	15
+NE	65+	Unknown Sex	Asian	11
+NE	65+	Unknown Sex	White	140
+NE	65+	Unknown Sex	Latino	21
+NE	65+	Unknown Sex	Unknown Race	20
+NE	Unknown Age	F	Black	9
+NE	Unknown Age	F	Asian	5
+NE	Unknown Age	F	White	543
+NE	Unknown Age	F	Latino	61
+NE	Unknown Age	F	Native Am	1
+NE	Unknown Age	F	Unknown Race	33
+NE	Unknown Age	M	Black	10
+NE	Unknown Age	M	White	310
+NE	Unknown Age	M	Latino	45
+NE	Unknown Age	M	Unknown Race	34
+NE	Unknown Age	Unknown Sex	Black	35
+NE	Unknown Age	Unknown Sex	Asian	6
+NE	Unknown Age	Unknown Sex	White	294
+NE	Unknown Age	Unknown Sex	Latino	22
+NE	Unknown Age	Unknown Sex	Unknown Race	25
+NH	18-24	F	Black	3
+NH	18-24	F	Asian	5
+NH	18-24	F	White	2462
+NH	18-24	F	Latino	22
+NH	18-24	F	Unknown Race	75
+NH	18-24	M	Asian	7
+NH	18-24	M	White	1348
+NH	18-24	M	Latino	17
+NH	18-24	M	Unknown Race	41
+NH	18-24	Unknown Sex	Black	7
+NH	18-24	Unknown Sex	Asian	12
+NH	18-24	Unknown Sex	White	629
+NH	18-24	Unknown Sex	Latino	7
+NH	18-24	Unknown Sex	Unknown Race	48
+NH	25-34	F	Black	37
+NH	25-34	F	Asian	44
+NH	25-34	F	White	16792
+NH	25-34	F	Latino	160
+NH	25-34	F	Native Am	6
+NH	25-34	F	Unknown Race	498
+NH	25-34	M	Black	24
+NH	25-34	M	Asian	54
+NH	25-34	M	White	10772
+NH	25-34	M	Latino	113
+NH	25-34	M	Native Am	4
+NH	25-34	M	Unknown Race	288
+NH	25-34	Unknown Sex	Black	13
+NH	25-34	Unknown Sex	Asian	30
+NH	25-34	Unknown Sex	White	842
+NH	25-34	Unknown Sex	Latino	35
+NH	25-34	Unknown Sex	Unknown Race	111
+NH	35-49	F	Black	59
+NH	35-49	F	Asian	119
+NH	35-49	F	White	26831
+NH	35-49	F	Latino	236
+NH	35-49	F	Native Am	2
+NH	35-49	F	Unknown Race	784
+NH	35-49	M	Black	40
+NH	35-49	M	Asian	107
+NH	35-49	M	White	16667
+NH	35-49	M	Latino	143
+NH	35-49	M	Native Am	3
+NH	35-49	M	Unknown Race	559
+NH	35-49	Unknown Sex	Black	15
+NH	35-49	Unknown Sex	Asian	67
+NH	35-49	Unknown Sex	White	921
+NH	35-49	Unknown Sex	Latino	32
+NH	35-49	Unknown Sex	Native Am	1
+NH	35-49	Unknown Sex	Unknown Race	158
+NH	50-64	F	Black	73
+NH	50-64	F	Asian	149
+NH	50-64	F	White	40675
+NH	50-64	F	Latino	200
+NH	50-64	F	Native Am	2
+NH	50-64	F	Unknown Race	765
+NH	50-64	M	Black	57
+NH	50-64	M	Asian	136
+NH	50-64	M	White	26098
+NH	50-64	M	Latino	139
+NH	50-64	M	Native Am	2
+NH	50-64	M	Unknown Race	559
+NH	50-64	Unknown Sex	Black	9
+NH	50-64	Unknown Sex	Asian	83
+NH	50-64	Unknown Sex	White	1016
+NH	50-64	Unknown Sex	Latino	11
+NH	50-64	Unknown Sex	Unknown Race	104
+NH	65+	F	Black	44
+NH	65+	F	Asian	67
+NH	65+	F	White	41060
+NH	65+	F	Latino	95
+NH	65+	F	Native Am	1
+NH	65+	F	Unknown Race	422
+NH	65+	M	Black	37
+NH	65+	M	Asian	45
+NH	65+	M	White	26799
+NH	65+	M	Latino	81
+NH	65+	M	Native Am	2
+NH	65+	M	Unknown Race	354
+NH	65+	Unknown Sex	Black	3
+NH	65+	Unknown Sex	Asian	17
+NH	65+	Unknown Sex	White	436
+NH	65+	Unknown Sex	Latino	5
+NH	65+	Unknown Sex	Unknown Race	68
+NH	Unknown Age	F	Black	18
+NH	Unknown Age	F	Asian	44
+NH	Unknown Age	F	White	6761
+NH	Unknown Age	F	Latino	110
+NH	Unknown Age	F	Unknown Race	335
+NH	Unknown Age	M	Black	29
+NH	Unknown Age	M	Asian	30
+NH	Unknown Age	M	White	4582
+NH	Unknown Age	M	Latino	98
+NH	Unknown Age	M	Unknown Race	246
+NH	Unknown Age	Unknown Sex	Black	25
+NH	Unknown Age	Unknown Sex	Asian	89
+NH	Unknown Age	Unknown Sex	White	1712
+NH	Unknown Age	Unknown Sex	Latino	49
+NH	Unknown Age	Unknown Sex	Unknown Race	266
+NV	18-24	F	Black	289
+NV	18-24	F	Asian	223
+NV	18-24	F	White	3552
+NV	18-24	F	Latino	3118
+NV	18-24	F	Native Am	8
+NV	18-24	F	Unknown Race	446
+NV	18-24	M	Black	302
+NV	18-24	M	Asian	226
+NV	18-24	M	White	3337
+NV	18-24	M	Latino	3047
+NV	18-24	M	Native Am	10
+NV	18-24	M	Unknown Race	352
+NV	18-24	Unknown Sex	Black	685
+NV	18-24	Unknown Sex	Asian	307
+NV	18-24	Unknown Sex	White	2745
+NV	18-24	Unknown Sex	Latino	1267
+NV	18-24	Unknown Sex	Native Am	7
+NV	18-24	Unknown Sex	Unknown Race	323
+NV	25-34	F	Black	1361
+NV	25-34	F	Asian	558
+NV	25-34	F	White	12107
+NV	25-34	F	Latino	6727
+NV	25-34	F	Native Am	35
+NV	25-34	F	Unknown Race	1094
+NV	25-34	M	Black	1103
+NV	25-34	M	Asian	555
+NV	25-34	M	White	11535
+NV	25-34	M	Latino	6288
+NV	25-34	M	Native Am	25
+NV	25-34	M	Unknown Race	881
+NV	25-34	Unknown Sex	Black	1023
+NV	25-34	Unknown Sex	Asian	331
+NV	25-34	Unknown Sex	White	2885
+NV	25-34	Unknown Sex	Latino	1038
+NV	25-34	Unknown Sex	Native Am	14
+NV	25-34	Unknown Sex	Unknown Race	362
+NV	35-49	F	Black	1909
+NV	35-49	F	Asian	888
+NV	35-49	F	White	19101
+NV	35-49	F	Latino	6801
+NV	35-49	F	Native Am	45
+NV	35-49	F	Unknown Race	1693
+NV	35-49	M	Black	1343
+NV	35-49	M	Asian	813
+NV	35-49	M	White	16471
+NV	35-49	M	Latino	5687
+NV	35-49	M	Native Am	46
+NV	35-49	M	Unknown Race	1274
+NV	35-49	Unknown Sex	Black	704
+NV	35-49	Unknown Sex	Asian	421
+NV	35-49	Unknown Sex	White	2076
+NV	35-49	Unknown Sex	Latino	590
+NV	35-49	Unknown Sex	Native Am	6
+NV	35-49	Unknown Sex	Unknown Race	331
+NV	50-64	F	Black	1572
+NV	50-64	F	Asian	840
+NV	50-64	F	White	21861
+NV	50-64	F	Latino	5085
+NV	50-64	F	Native Am	77
+NV	50-64	F	Unknown Race	1546
+NV	50-64	M	Black	1301
+NV	50-64	M	Asian	723
+NV	50-64	M	White	18159
+NV	50-64	M	Latino	5937
+NV	50-64	M	Native Am	46
+NV	50-64	M	Unknown Race	1225
+NV	50-64	Unknown Sex	Black	245
+NV	50-64	Unknown Sex	Asian	259
+NV	50-64	Unknown Sex	White	1065
+NV	50-64	Unknown Sex	Latino	283
+NV	50-64	Unknown Sex	Native Am	1
+NV	50-64	Unknown Sex	Unknown Race	197
+NV	65+	F	Black	1276
+NV	65+	F	Asian	717
+NV	65+	F	White	27027
+NV	65+	F	Latino	2925
+NV	65+	F	Native Am	66
+NV	65+	F	Unknown Race	1366
+NV	65+	M	Black	892
+NV	65+	M	Asian	729
+NV	65+	M	White	20125
+NV	65+	M	Latino	3073
+NV	65+	M	Native Am	36
+NV	65+	M	Unknown Race	1141
+NV	65+	Unknown Sex	Black	73
+NV	65+	Unknown Sex	Asian	185
+NV	65+	Unknown Sex	White	634
+NV	65+	Unknown Sex	Latino	141
+NV	65+	Unknown Sex	Unknown Race	111
+NV	Unknown Age	F	Black	8
+NV	Unknown Age	F	Asian	6
+NV	Unknown Age	F	White	63
+NV	Unknown Age	F	Latino	50
+NV	Unknown Age	F	Native Am	1
+NV	Unknown Age	F	Unknown Race	7
+NV	Unknown Age	M	Black	3
+NV	Unknown Age	M	Asian	5
+NV	Unknown Age	M	White	53
+NV	Unknown Age	M	Latino	46
+NV	Unknown Age	M	Unknown Race	6
+NV	Unknown Age	Unknown Sex	Black	18
+NV	Unknown Age	Unknown Sex	Asian	3
+NV	Unknown Age	Unknown Sex	White	73
+NV	Unknown Age	Unknown Sex	Latino	24
+NV	Unknown Age	Unknown Sex	Unknown Race	13
+PA	18-24	F	Black	25233
+PA	18-24	F	Asian	4577
+PA	18-24	F	White	126027
+PA	18-24	F	Latino	8258
+PA	18-24	F	Native Am	29
+PA	18-24	F	Unknown Race	10857
+PA	18-24	M	Black	19266
+PA	18-24	M	Asian	3370
+PA	18-24	M	White	86278
+PA	18-24	M	Latino	6780
+PA	18-24	M	Native Am	25
+PA	18-24	M	Unknown Race	7604
+PA	18-24	Unknown Sex	Black	5641
+PA	18-24	Unknown Sex	Asian	767
+PA	18-24	Unknown Sex	White	9851
+PA	18-24	Unknown Sex	Latino	1450
+PA	18-24	Unknown Sex	Native Am	9
+PA	18-24	Unknown Sex	Unknown Race	1444
+PA	25-34	F	Black	61183
+PA	25-34	F	Asian	5070
+PA	25-34	F	White	224736
+PA	25-34	F	Latino	17859
+PA	25-34	F	Native Am	47
+PA	25-34	F	Unknown Race	17792
+PA	25-34	M	Black	46794
+PA	25-34	M	Asian	4383
+PA	25-34	M	White	168030
+PA	25-34	M	Latino	14009
+PA	25-34	M	Native Am	35
+PA	25-34	M	Unknown Race	13138
+PA	25-34	Unknown Sex	Black	4003
+PA	25-34	Unknown Sex	Asian	1018
+PA	25-34	Unknown Sex	White	5428
+PA	25-34	Unknown Sex	Latino	1403
+PA	25-34	Unknown Sex	Native Am	2
+PA	25-34	Unknown Sex	Unknown Race	1520
+PA	35-49	F	Black	64788
+PA	35-49	F	Asian	4946
+PA	35-49	F	White	264497
+PA	35-49	F	Latino	20865
+PA	35-49	F	Native Am	42
+PA	35-49	F	Unknown Race	18686
+PA	35-49	M	Black	48559
+PA	35-49	M	Asian	4333
+PA	35-49	M	White	190389
+PA	35-49	M	Latino	16130
+PA	35-49	M	Native Am	38
+PA	35-49	M	Unknown Race	13893
+PA	35-49	Unknown Sex	Black	2566
+PA	35-49	Unknown Sex	Asian	1047
+PA	35-49	Unknown Sex	White	3601
+PA	35-49	Unknown Sex	Latino	966
+PA	35-49	Unknown Sex	Native Am	4
+PA	35-49	Unknown Sex	Unknown Race	1339
+PA	50-64	F	Black	66180
+PA	50-64	F	Asian	3902
+PA	50-64	F	White	303462
+PA	50-64	F	Latino	16121
+PA	50-64	F	Native Am	60
+PA	50-64	F	Unknown Race	12348
+PA	50-64	M	Black	50878
+PA	50-64	M	Asian	4115
+PA	50-64	M	White	215230
+PA	50-64	M	Latino	13747
+PA	50-64	M	Native Am	27
+PA	50-64	M	Unknown Race	9876
+PA	50-64	Unknown Sex	Black	1203
+PA	50-64	Unknown Sex	Asian	903
+PA	50-64	Unknown Sex	White	2051
+PA	50-64	Unknown Sex	Latino	383
+PA	50-64	Unknown Sex	Unknown Race	818
+PA	65+	F	Black	50368
+PA	65+	F	Asian	2663
+PA	65+	F	White	327736
+PA	65+	F	Latino	8221
+PA	65+	F	Native Am	44
+PA	65+	F	Unknown Race	7687
+PA	65+	M	Black	29704
+PA	65+	M	Asian	2889
+PA	65+	M	White	220423
+PA	65+	M	Latino	6676
+PA	65+	M	Native Am	24
+PA	65+	M	Unknown Race	5856
+PA	65+	Unknown Sex	Black	491
+PA	65+	Unknown Sex	Asian	595
+PA	65+	Unknown Sex	White	1257
+PA	65+	Unknown Sex	Latino	179
+PA	65+	Unknown Sex	Unknown Race	475
+PA	Unknown Age	F	Black	1272
+PA	Unknown Age	F	Asian	277
+PA	Unknown Age	F	White	9330
+PA	Unknown Age	F	Latino	396
+PA	Unknown Age	F	Native Am	1
+PA	Unknown Age	F	Unknown Race	646
+PA	Unknown Age	M	Black	1025
+PA	Unknown Age	M	Asian	200
+PA	Unknown Age	M	White	5558
+PA	Unknown Age	M	Latino	341
+PA	Unknown Age	M	Unknown Race	419
+PA	Unknown Age	Unknown Sex	Black	385
+PA	Unknown Age	Unknown Sex	Asian	30
+PA	Unknown Age	Unknown Sex	White	677
+PA	Unknown Age	Unknown Sex	Latino	84
+PA	Unknown Age	Unknown Sex	Unknown Race	74
+SC	18-24	F	Black	11786
+SC	18-24	F	Asian	323
+SC	18-24	F	White	6206
+SC	18-24	F	Latino	601
+SC	18-24	F	Native Am	46
+SC	18-24	F	Unknown Race	588
+SC	18-24	M	Black	11319
+SC	18-24	M	Asian	206
+SC	18-24	M	White	3562
+SC	18-24	M	Latino	525
+SC	18-24	M	Native Am	35
+SC	18-24	M	Unknown Race	411
+SC	18-24	Unknown Sex	Black	9
+SC	25-34	F	Black	41063
+SC	25-34	F	Asian	600
+SC	25-34	F	White	20245
+SC	25-34	F	Latino	1243
+SC	25-34	F	Native Am	164
+SC	25-34	F	Unknown Race	950
+SC	25-34	M	Black	33404
+SC	25-34	M	Asian	485
+SC	25-34	M	White	10697
+SC	25-34	M	Latino	830
+SC	25-34	M	Native Am	117
+SC	25-34	M	Unknown Race	540
+SC	25-34	Unknown Sex	Black	4
+SC	25-34	Unknown Sex	Latino	1
+SC	35-49	F	Black	66829
+SC	35-49	F	Asian	1071
+SC	35-49	F	White	22848
+SC	35-49	F	Latino	1474
+SC	35-49	F	Native Am	230
+SC	35-49	F	Unknown Race	756
+SC	35-49	M	Black	46751
+SC	35-49	M	Asian	635
+SC	35-49	M	White	12082
+SC	35-49	M	Latino	888
+SC	35-49	M	Native Am	123
+SC	35-49	M	Unknown Race	356
+SC	35-49	Unknown Sex	Black	1
+SC	50-64	F	Black	75564
+SC	50-64	F	Asian	892
+SC	50-64	F	White	25547
+SC	50-64	F	Latino	1055
+SC	50-64	F	Native Am	217
+SC	50-64	F	Unknown Race	529
+SC	50-64	M	Black	56996
+SC	50-64	M	Asian	587
+SC	50-64	M	White	14074
+SC	50-64	M	Latino	727
+SC	50-64	M	Native Am	145
+SC	50-64	M	Unknown Race	376
+SC	65+	F	Black	71534
+SC	65+	F	Asian	693
+SC	65+	F	White	33806
+SC	65+	F	Latino	493
+SC	65+	F	Native Am	179
+SC	65+	F	Unknown Race	407
+SC	65+	M	Black	48939
+SC	65+	M	Asian	464
+SC	65+	M	White	18948
+SC	65+	M	Latino	357
+SC	65+	M	Native Am	122
+SC	65+	M	Unknown Race	255
+SC	Unknown Age	F	Black	713
+SC	Unknown Age	F	Asian	24
+SC	Unknown Age	F	White	187
+SC	Unknown Age	F	Latino	47
+SC	Unknown Age	F	Native Am	3
+SC	Unknown Age	F	Unknown Race	39
+SC	Unknown Age	M	Black	578
+SC	Unknown Age	M	Asian	19
+SC	Unknown Age	M	White	118
+SC	Unknown Age	M	Latino	21
+SC	Unknown Age	M	Unknown Race	25
+SC	Unknown Age	Unknown Sex	Black	2
+TX	65+	F	White	1
+WI	18-24	F	Black	1203
+WI	18-24	F	Asian	151
+WI	18-24	F	White	11224
+WI	18-24	F	Latino	990
+WI	18-24	F	Native Am	41
+WI	18-24	F	Unknown Race	819
+WI	18-24	M	Black	849
+WI	18-24	M	Asian	104
+WI	18-24	M	White	6467
+WI	18-24	M	Latino	618
+WI	18-24	M	Native Am	28
+WI	18-24	M	Unknown Race	455
+WI	18-24	Unknown Sex	Black	1845
+WI	18-24	Unknown Sex	Asian	237
+WI	18-24	Unknown Sex	White	3114
+WI	18-24	Unknown Sex	Latino	295
+WI	18-24	Unknown Sex	Native Am	19
+WI	18-24	Unknown Sex	Unknown Race	478
+WI	25-34	F	Black	7701
+WI	25-34	F	Asian	801
+WI	25-34	F	White	65805
+WI	25-34	F	Latino	2705
+WI	25-34	F	Native Am	260
+WI	25-34	F	Unknown Race	3732
+WI	25-34	M	Black	4373
+WI	25-34	M	Asian	573
+WI	25-34	M	White	39539
+WI	25-34	M	Latino	1471
+WI	25-34	M	Native Am	122
+WI	25-34	M	Unknown Race	1995
+WI	25-34	Unknown Sex	Black	2543
+WI	25-34	Unknown Sex	Asian	622
+WI	25-34	Unknown Sex	White	4568
+WI	25-34	Unknown Sex	Latino	285
+WI	25-34	Unknown Sex	Native Am	25
+WI	25-34	Unknown Sex	Unknown Race	1056
+WI	35-49	F	Black	16014
+WI	35-49	F	Asian	1351
+WI	35-49	F	White	105675
+WI	35-49	F	Latino	5058
+WI	35-49	F	Native Am	507
+WI	35-49	F	Unknown Race	7125
+WI	35-49	M	Black	9724
+WI	35-49	M	Asian	1013
+WI	35-49	M	White	63601
+WI	35-49	M	Latino	3305
+WI	35-49	M	Native Am	310
+WI	35-49	M	Unknown Race	4096
+WI	35-49	Unknown Sex	Black	2882
+WI	35-49	Unknown Sex	Asian	703
+WI	35-49	Unknown Sex	White	4993
+WI	35-49	Unknown Sex	Latino	524
+WI	35-49	Unknown Sex	Native Am	29
+WI	35-49	Unknown Sex	Unknown Race	1262
+WI	50-64	F	Black	15978
+WI	50-64	F	Asian	1215
+WI	50-64	F	White	123056
+WI	50-64	F	Latino	4159
+WI	50-64	F	Native Am	638
+WI	50-64	F	Unknown Race	5278
+WI	50-64	M	Black	11812
+WI	50-64	M	Asian	1090
+WI	50-64	M	White	72672
+WI	50-64	M	Latino	3498
+WI	50-64	M	Native Am	385
+WI	50-64	M	Unknown Race	3384
+WI	50-64	Unknown Sex	Black	1427
+WI	50-64	Unknown Sex	Asian	592
+WI	50-64	Unknown Sex	White	3384
+WI	50-64	Unknown Sex	Latino	327
+WI	50-64	Unknown Sex	Native Am	25
+WI	50-64	Unknown Sex	Unknown Race	774
+WI	65+	F	Black	11785
+WI	65+	F	Asian	622
+WI	65+	F	White	122993
+WI	65+	F	Latino	2024
+WI	65+	F	Native Am	487
+WI	65+	F	Unknown Race	3250
+WI	65+	M	Black	8186
+WI	65+	M	Asian	564
+WI	65+	M	White	73827
+WI	65+	M	Latino	1770
+WI	65+	M	Native Am	309
+WI	65+	M	Unknown Race	2101
+WI	65+	Unknown Sex	Black	833
+WI	65+	Unknown Sex	Asian	211
+WI	65+	Unknown Sex	White	1516
+WI	65+	Unknown Sex	Latino	135
+WI	65+	Unknown Sex	Native Am	20
+WI	65+	Unknown Sex	Unknown Race	302
+WI	Unknown Age	F	Black	4551
+WI	Unknown Age	F	Asian	619
+WI	Unknown Age	F	White	57703
+WI	Unknown Age	F	Latino	3233
+WI	Unknown Age	F	Native Am	310
+WI	Unknown Age	F	Unknown Race	4870
+WI	Unknown Age	M	Black	4102
+WI	Unknown Age	M	Asian	467
+WI	Unknown Age	M	White	39732
+WI	Unknown Age	M	Latino	2485
+WI	Unknown Age	M	Native Am	221
+WI	Unknown Age	M	Unknown Race	3416
+WI	Unknown Age	Unknown Sex	Black	4330
+WI	Unknown Age	Unknown Sex	Asian	927
+WI	Unknown Age	Unknown Sex	White	13495
+WI	Unknown Age	Unknown Sex	Latino	1065
+WI	Unknown Age	Unknown Sex	Native Am	112
+WI	Unknown Age	Unknown Sex	Unknown Race	2740

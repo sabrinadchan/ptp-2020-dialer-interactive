@@ -17,25 +17,44 @@
       .attr("id", "treemap-title")
       .attr("x", 10)
       .attr("y", 15)
-      .attr("font-size", "14px")
+      .attr("font-size", "16px")
       .attr("font-weight", "bold");
+
+  function demoToFullText(text) {
+    if (text == "F") {
+      return "Female";
+    } else if (text == "M") {
+      return "Male";
+    } else if (text == "Native Am") {
+      return "Native American";
+    } else {
+      return text;
+    }
+  }
+
+  var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(d =>`<p><strong>${abbrToStateName[selectState.property("value")]}</strong><br><br>${d.ancestors().reverse().map(d => demoToFullText(d.data[0])).filter(Boolean).join(", ")}<br><br>${formatNumber(d.value)} targets</p>`);
+
+  svg.call(tip);
 
   var colorMapper = {
     "F": "#F68481",
     "M": "#5CC7DD",
-    "U": "#76797E",
+    "Unknown Sex": "#76797E",
     "White": "#5CC7DD",
     "Black": "#72D793",
     "Asian": "#F68481",
     "Latino": "#E6CD58",
-    "Na-Am": "#CF9FD3",
-    "Unk": "#76797E",
+    "Native Am": "#CF9FD3",
+    "Unknown Race": "#76797E",
     "18-24": "#E6CD58",
     "25-34": "#72D793",
     "35-49": "#CF9FD3",
     "50-64": "#5CC7DD",
     "65+": "#F68481",
-    "Unk": "#76797E",
+    "Unknown Age": "#76797E"
   }
 
   function color(d) {
@@ -55,7 +74,7 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.csv("data/program/demographics.csv", d3.autoType),
+    d3.tsv("data/program/demographics.tsv", d3.autoType),
   ])
   .then(([demos,]) => {
     selectState.on("change", update);
@@ -85,12 +104,19 @@
           if (this.value) groupers.push(d => d[this.value]);
         });
 
-      treemapTitle.text(`
-        ${[abbrToStateName[state]]}
-        target universe by ${demographics.join(" > ")}`
-      )
+      if (demographics.length > 0){
+        treemapTitle.text(`
+          ${abbrToStateName[state]}
+          Target Universe by ${demographics.map(d => d.charAt(0).toUpperCase() + d.slice(1)).join(" & ")}`
+        )
+      } else {
+        treemapTitle.text(`
+          ${[abbrToStateName[state]]}
+          Target Universe`
+        )
+      }
 
-      var rolledUp = d3.rollup(demos, v => d3.sum(v, d => state == "All States" || state == d.state ? d.counts : 0), ...groupers)
+      var rolledUp = d3.rollup(demos, v => d3.sum(v, d => state == "All" || state == d.state ? d.counts : 0), ...groupers)
 
       var childrenAccessorFn = ([ key, value ]) => value.size && Array.from(value)
 
@@ -111,11 +137,18 @@
       var leaf = treemap.selectAll("g")
         .data(tmap.leaves())
         .join("g")
-          .attr("transform", d => `translate(${d.x0},${d.y0})`);
+          .attr("transform", d => `translate(${d.x0},${d.y0})`)
+          .on('mouseover', function(_, d) {
+            tip.show(d, this)
+          })
+          .on('mouseout', function(_, d) {
+            tip.hide(d, this);
+          });
 
+/*
       leaf.append("title")
         .text(d => `${state}${d.ancestors().reverse().map(d => d.data[0]).join(", ")}\n${formatNumber(d.value)}`);
-
+*/
       leaf.append("rect")
           .attr("id", (_, i) => `leaf${i}`)
           .attr("width", d => d.x1 - d.x0)
@@ -139,14 +172,14 @@
           .attr("y", (d, i, nodes) => `${(i === nodes.length - 1) * 0.3 + 1.1 + i * 0.9}em`)
           .attr("fill-opacity", (d, i, nodes) => i === nodes.length - 1 ? 0.7 : null)
           .attr("font-size", "10px")
-          .text(d => d);
+          .text(d => !d ? d : d.includes("Unk") ? "Unk" : d);
 
       treemap.selectAll("titles")
           .data(root.descendants().filter(d => d.depth == 1 && d.height > 0))
           .join("text")
             .attr("x", d => d.x0+4)
             .attr("y", d => d.y0+8)
-            .text(d => d.data[0] )
+            .text(d => d.data[0].includes("Unk") ? "Unk": d.data[0])// Update title to full text -- demographic to full-text
             .attr("font-size", "10px")
             .attr("font-weight", "bold")
             .attr("color", "black")
@@ -158,7 +191,7 @@
             .attr("id", (_, i) => `title${i}`)
             .attr("x", d => d.x0+2)
             .attr("y", d => d.y0+8)
-            .text(d => d.data[0] )
+            .text(d => d.data[0].includes("Unk") ? "Unk": d.data[0])
             .attr("font-size", "10px")
             .attr("color", "black");
     }

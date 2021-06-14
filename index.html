@@ -18,15 +18,16 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <img src="static/img/HORIZONTAL-logo-blue-and-red-on-transparent.png" alt="PTP logo">
+    <div class="row align-items-center section">
+      <div class="col d-flex justify-content-center">
+        <img src="static/img/HORIZONTAL-logo-blue-and-red-on-transparent.png" id="logo" alt="PTP logo">
+      </div>
     </div>
+    <div class="section">
     <div class="row">
       <div class="col">
         <h2>Interactive Impact Report</h2>
-        <p>Progressive Turnout Project is the largest voter contact organization in the country. Our mission: Get Democrats to vote.</p>
-
-        <p>The best way to turn out voters is through one-on-one conversations. We talk to inconsistent voters who are likely Democrats, so they do not need persuading on who to vote for. They just need a nudge, some information, and to hear from a real person. That means every eligible non-voter we are able to reach brings Democrats closer to success on Election Day.</p>
+        <p>Progressive Turnout Project is the largest voter contact organization in the country. <strong>Our mission: Get Democrats to vote.</strong> The best way to turn out voters is through one-on-one conversations. We talk to inconsistent voters who are likely Democrats, so they do not need persuading on who to vote for. They just need a nudge, some information, and to hear from a real person. That means every eligible non-voter we are able to reach brings Democrats closer to success on Election Day.</p>
 
         <p>We started our voter turnout program in 2020 by knocking on doors and having face-to-face conversations with voters, but because of the worsening COVID-19 pandemic, we had to adjust our usual tactics. By August, we had converted our door-knocking program with over 1,200 staff in 18 states into a massive phone banking operation. By the end of the election, we had made over 40 million calls and contacted nearly one million voters.</p>
       </div>
@@ -54,10 +55,13 @@
 
     <div class="row">
       <div class="col">
-        <p>The visualizations on this page provide an interactive look at our work in the 2020 election cycle, including the types of voters we targeted, a timeline of our phone banking operation, and the results of our outreach.</p>
+        <p><strong>The visualizations on this page provide an interactive look at work of PTP staff in the 2020 election cycle</strong>, including the types of voters we targeted, a timeline of our phone banking operation, and the results of our outreach. Besides a staff program, PTP also ran a fellows program and volunteer postcard and phonebanking program; however, the results of those efforts are not included on this page.
+        </p>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h2>2020 Election Recap</h2>
@@ -82,12 +86,14 @@
         <p>Progressive Turnout Project was one of many organizations in the progressive ecosystem working to get out the vote last November. How did we help Democrats win the presidency and flip the Senate? Read more about our program below.</p>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h2>Our Program</h2>
         <h3>Target Voter Universe</h3>
-        <p>Our target states during the 2020 cycle included Presidential battleground states and states with competitive Senate races, in order to help accomplish two of the Democrats' major goals: elect Joe Biden and take back the Senate.</p>
+        <p>Our target states during the 2020 cycle included Presidential battleground states and states with competitive Senate races in order to help accomplish two of the Democrats' major goals: elect Joe Biden and take back the Senate.</p>
         <p>Using modeling and voter file data, we target likely Democratic voters who turn out infrequently or irregularly. Our targets tend to be younger and skew more toward women and people of color than the general voting population.</p>
         <p><em>Click on a table column to sort the table by that column.</em></p>
       </div>
@@ -99,7 +105,9 @@
         </div>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h3>Demographic Breakdown</h3>
@@ -120,11 +128,14 @@
         <div id="treemap"></div>
       </div>
     </div>
+    </div>
+
+    <div class="section">
     <div class="row">
       <div class="col">
         <h3>From Doors To Phones</h3>
         <p>When PTP shifted our conversations from on the doors to phone calls in August of 2020, our voter universe in turn shifted in a dramatic way. While we still focused on contacting likely Democrats, especially those who are less likely to turnout to vote, we were suddenly limited to just the individuals for whom we had phone numbers.</p>
-        <p>On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. This program shift also had an impact on the age and racial breakdown of our target voters. As our universe expanded beyond large metro areas, our universe became proportionately whiter. Moreover, by switching the phones, the share of our universe made up by voters 65+ expanded greatly in each state.
+        <p>On the other hand, this shift also expanded our universe, allowing us to reach voters outside the geographic radius around our office locations and to reach deeper into states, especially those with significant rural populations. This program shift also had an impact on the age and racial breakdown of our target voters. As our universe expanded beyond large metro areas, our universe became proportionately whiter. Moreover, by switching the phones, the share of our universe made up by voters 65+ expanded greatly in each state.</p>
         <p><em>Change the demographic shown by clicking the dropdown arrow in the chart title. Hover over the lines to see more detail about how a demographic group in a particular state changed between programs.</em></p>
       </div>
     </div>
@@ -136,7 +147,9 @@
     </div>
 
     <div id="slope-charts" class="row align-items-center"></div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <p>The map below gives a visual sense of the distribution of our targets during the canvass and phone phases of our program. One dot represents 1/2000th of the selected phase's target universe.</p>
@@ -152,7 +165,9 @@
         <div id="geographic-shift"></div>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <h3>Field Team</h3>
       <div class="col-md-8">
@@ -163,7 +178,9 @@
         <table id="field-staff-table"></table>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h3>Dialer Program Timeline</h3>
@@ -211,7 +228,9 @@
         <div id="vote-plan-vbm-chart" class="program-metrics-chart"></div>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h2>Our Results</h2>
@@ -226,7 +245,9 @@
         <table id="impact-table"></table>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h3>Efficacy of outreach over time</h3>
@@ -265,14 +286,18 @@
         <div id="cum-cr-by-attempt-chart"></div>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
-        <h2>Summary</h2>
+        <h2>Conclusion</h2>
         <p>Despite the pandemic forcing us to change our usual tactics, we had the opportunity to discuss the importance of voting with a larger number and an even wider swath of voters than in our past programs. While we cannot understate the importance of face-to-face voter contact, being able to reach as many voters as possible was absolutely critical in the most important election of our lifetimes. Over 40 million voter contact attempts and nearly one million voters canvassed would not have been possible with our traditional program!</p>
       </div>
     </div>
+    </div>
 
+    <div class="section">
     <div class="row">
       <div class="col">
         <h2>Acknowledgements</h2>
@@ -281,6 +306,7 @@
         The source code for this project is available on GitHub.
         </p>
       </div>
+    </div>
     </div>
   </div>
 
