@@ -52,8 +52,8 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.json("data/geospatial/states-10m-filtered.topojson"),
-    d3.tsv("data/program/election-results.tsv", process)
+    d3.json("../data/geospatial/states-10m-filtered.topojson"),
+    d3.tsv("../data/program/election-results.tsv", process)
   ])
   .then(([us,]) => {
     usFeatures = topojson.feature(us, us.objects.states).features

@@ -43,8 +43,8 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.tsv("data/program/program-metrics.tsv", parse),
-    d3.json("data/geospatial/states-10m-filtered.topojson"),
+    d3.tsv("../data/program/program-metrics.tsv", parse),
+    d3.json("../data/geospatial/states-10m-filtered.topojson"),
   ])
   .then(([program, us, state]) => {
     svg.selectAll("g").remove();

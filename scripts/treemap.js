@@ -74,7 +74,7 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.tsv("data/program/demographics.tsv", d3.autoType),
+    d3.tsv("../data/program/demographics.tsv", d3.autoType),
   ])
   .then(([demos,]) => {
     selectState.on("change", update);
