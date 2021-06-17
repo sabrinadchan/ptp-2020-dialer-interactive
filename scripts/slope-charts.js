@@ -53,7 +53,7 @@
 
   const removeDemos = ["Native Am.", "Unk", "Unknown", "Uncoded", "Asian"]//, "White", "Black", "Latino"] // native-am in MT and AZ?
   Promise.all([
-    d3.tsv("../data/program/demographic-change.tsv"),
+    d3.tsv("data/program/demographic-change.tsv"),
   ])
   .then(([demographicChanges,]) => {
     selectDemographics.on("change", update);

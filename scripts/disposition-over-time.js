@@ -40,8 +40,8 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.tsv("../data/program/disposition-rates.tsv", d3.autoType),
-    d3.json("../data/geospatial/states-10m-filtered.topojson"),
+    d3.tsv("data/program/disposition-rates.tsv", d3.autoType),
+    d3.json("data/geospatial/states-10m-filtered.topojson"),
   ])
   .then(([data, us,]) => {
     svg.selectAll("g").remove();

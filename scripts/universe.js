@@ -1,8 +1,8 @@
 (function(){
   Promise.all([
-    d3.tsv("../data/program/universe.tsv", d3.autoType),
-    d3.tsv("../data/program/staff.tsv", d3.autoType),
-    d3.tsv("../data/program/impact.tsv", d3.autoType),
+    d3.tsv("data/program/universe.tsv", d3.autoType),
+    d3.tsv("data/program/staff.tsv", d3.autoType),
+    d3.tsv("data/program/impact.tsv", d3.autoType),
   ])
   .then(([targets, staff, impact]) => {
     buildTable("#targets-table", targets.filter(d => d.statecode != "All"), targetColumns, sortTable);

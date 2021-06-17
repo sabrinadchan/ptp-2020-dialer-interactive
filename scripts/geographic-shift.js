@@ -92,9 +92,9 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.json("../data/geospatial/random_points_canvass_pct_2.geojson"),
-    d3.json("../data/geospatial/random_points_phone_pct_2.geojson"),
-    d3.json("../data/geospatial/states-10m-filtered.topojson"),
+    d3.json("data/geospatial/random_points_canvass_pct_2.geojson"),
+    d3.json("data/geospatial/random_points_phone_pct_2.geojson"),
+    d3.json("data/geospatial/states-10m-filtered.topojson"),
   ])
   .then(([canvass, phone, us,]) => {
     var usFiltered = usFeatures.filter(d => geographicShiftStates.map(d => d.abbr).includes(d.id));

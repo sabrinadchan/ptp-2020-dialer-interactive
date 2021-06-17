@@ -32,7 +32,7 @@
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   Promise.all([
-    d3.tsv("../data/program/cum-cr-by-attempt.tsv"),
+    d3.tsv("data/program/cum-cr-by-attempt.tsv"),
   ])
   .then(([data,]) => {
 

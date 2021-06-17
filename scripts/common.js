@@ -151,7 +151,7 @@ const projection = d3.geoMercator()
 var path = d3.geoPath(projection);
 
 Promise.all([
-  d3.json("../data/geospatial/states-10m-filtered.topojson"),
+  d3.json("data/geospatial/states-10m-filtered.topojson"),
 ])
 .then(([us,]) => {
   usFeatures = topojson.feature(us, us.objects.states).features
