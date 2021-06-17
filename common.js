@@ -131,12 +131,14 @@ const weeks2 = {
   1: "10/24-11/3",
 }
 
+const ptpBlue = "#1cb4f0";
+
 var formatNumber = d3.format(",d");
 var formatPercent = d3.format(".1%");
 var formatDate = d3.timeFormat("%-d %b")
 
-const tileWidth = 450,
-      tileHeight = 300;
+const tileWidth = 336,//450,
+      tileHeight = 200;//300;
 
 const baseMapURL = d => `https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/${d[2]}/${d[0]}/${d[1]}.png`;
 

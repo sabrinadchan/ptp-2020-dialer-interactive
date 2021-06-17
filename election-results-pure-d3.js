@@ -1,6 +1,3 @@
-//      .attr("viewBox", "0 0 " + outerWidth + " " + outerHeight)
-//      .attr("preserveAspectRatio", "xMidYMid meet")
-
 (function() {
   var margin = { top: 0, right: 0, bottom: 0, left: 0 },
       outerWidth = 450,
@@ -65,8 +62,27 @@
 
     usFiltered = usFeatures.filter(d => statesAll.map(d => d.abbr).slice(1).includes(d.id))
 
+    var tiles = d3.tile()
+      .size([outerWidth, outerHeight])
+      .scale(projection.scale() * 2 * Math.PI)
+      .translate(projection([0, 0]))
+      ();
+
     map.append("g")
-        .attr("clip-path", "url(#contiguous-us-clip)")
+        .selectAll("path")
+        .data(topojson.feature(us, us.objects.nation).features)
+      .enter().append("path")
+        .attr("id", "electionsMapPath")
+        .attr("d", path)
+        .attr("stroke-width", "0px");
+
+    var clipped = map.append("clipPath")
+        .attr("id", "elections-map-clip")
+      .append("use")
+        .attr("xlink:href", "#electionsMapPath");
+
+    map.append("g")
+        .attr("clip-path", "url(#elections-map-clip)")
       .selectAll("image")
         .data(tiles)
       .enter().append("image")

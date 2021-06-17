@@ -4,19 +4,11 @@
 
   var svg = d3.select("#pod-selector-map").append("svg")
       .attr("width", mapWidth)
-      .attr("height", mapHeight)
-
-  const projection = d3.geoMercator()
-      .scale(1 / (2 * Math.PI))
-      .translate([0, 0]);
-
-  var path = d3.geoPath(projection);
+      .attr("height", mapHeight);
 
   var color = d3.scaleQuantile()
       .domain(d3.range(30, 80))
       .range(d3.schemeBlues[9]);
-
-  const demographics = ["age", "race", "sex"]
 
   var margin = { top: 20, right: 20, bottom: 40, left: 30 },
       outerWidth = 400,
@@ -59,32 +51,13 @@
     projection.fitSize([mapWidth, mapHeight], {type: "FeatureCollection", "features": usFeatures});
 
     usFiltered = usFeatures.filter(d => statesAll.map(d => d.abbr).slice(1).includes(d.id))
-    
-    var tiles = d3.tile()
-      .size([mapWidth, mapHeight])
-      .scale(projection.scale() * 2 * Math.PI)
-      .translate(projection([0, 0]))
-      ();
 
     svg.append("g")
-        .selectAll("path")
-        .data(topojson.feature(us, us.objects.nation).features)
-      .enter().append("path")
-        .attr("id", "podSelectorPath")
-        .attr("d", path)
-        .attr("stroke-width", "0px");
-
-    var clipped = svg.append("clipPath")
-        .attr("id", "disposition-clip")
-      .append("use")
-        .attr("xlink:href", "#podSelectorPath");
-
-    var map = svg.append("g")
-        .attr("clip-path", "url(#disposition-clip)")
+        .attr("clip-path", "url(#contiguous-us-clip)")
       .selectAll("image")
         .data(tiles)
       .enter().append("image")
-        .attr("xlink:href", d => `https://a.basemaps.cartocdn.com/rastertiles/light_nolabels/${d[2]}/${d[0]}/${d[1]}.png`)
+        .attr("xlink:href", baseMapURL)
         .attr("x", d => (d[0] + tiles.translate[0]) * tiles.scale)
         .attr("y", d => (d[1] + tiles.translate[1]) * tiles.scale)
         .attr("width", tiles.scale)

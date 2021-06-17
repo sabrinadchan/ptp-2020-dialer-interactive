@@ -36,6 +36,7 @@ div.section {
 
 #logo {
   height: auto;
+  max-height: 105px;
   width: 100%;
   max-width: 540px;
 }

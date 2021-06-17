@@ -6,19 +6,9 @@
     .attr("width", mapWidth)
     .attr("height", mapHeight)
 
-  const projection = d3.geoMercator()
-      .scale(1 / (2 * Math.PI))
-      .translate([0, 0]);
-
-  var path = d3.geoPath(projection);
-
   var color = d3.scaleQuantile()
       .domain(d3.range(30, 80))
       .range(d3.schemeBlues[9]);
-
-  const ptpBlue = "#1cb4f0";
-
-  const demographics = ["age", "race", "sex"]
 
   var margin = { top: 10, right: 30, bottom: 15, left: 30 },
       pmChartOuterWidth = 400,
@@ -65,27 +55,6 @@
     var byDateByState = d3.rollups(program, v => { return {"dials": d3.sum(v, d => d.dials), "canvassed": d3.sum(v, d => d.canvassed), "ctvs": d3.sum(v, d => d.ctvs), "vbms": d3.sum(v, d => d.vbms), "vote plan": d3.sum(v, d => d.vote_plan)}}, d => d.datecanvassed, d => d.statecode)
         .sort((a, b) => d3.ascending(a[0], b[0]));
 
-    /*
-    var metrics = Object.keys(byDate[0][1])
-    byDate.forEach((d,i,a) => {
-      if (!i) {
-        metrics.forEach(k => a[i][1][`cumsum-${k}`] = a[i][1][k])
-      } else {
-        metrics.forEach(k => a[i][1][`cumsum-${k}`] = a[i-1][1][`cumsum-${k}`] + a[i][1][k])
-      }
-    });
-
-    byDateByState.forEach((d,i,a) => {
-      d[1].forEach((s,j) => {
-        if (!i) {
-          metrics.forEach(k => a[i][1][j][1][`cumsum-${k}`] = a[i][1][j][1][k])
-        } else {
-          metrics.forEach(k => a[i][1][j][1][`cumsum-${k}`] = a[i-1][1][j][1][`cumsum-${k}`] + a[i][1][j][1][k])
-        }
-      })
-    });
-    console.log(byDateByState)*/
-
     x.domain(byDate.map(d => d[0]));
     xAxis.tickValues(d3.timeTuesdays(byDate[0][0], new Date("2020-11-04")));
 
@@ -95,31 +64,12 @@
 
     usFiltered = usFeatures.filter(d => statesAll.map(d => d.abbr).slice(1).includes(d.id))
 
-    var tiles = d3.tile()
-      .size([mapWidth, mapHeight])
-      .scale(projection.scale() * 2 * Math.PI)
-      .translate(projection([0, 0]))
-      ();
-
     svg.append("g")
-        .selectAll("path")
-        .data(topojson.feature(us, us.objects.nation).features)
-      .enter().append("path")
-        .attr("id", "programMetricsPath")
-        .attr("d", path)
-        .attr("stroke-width", "0px");
-
-    var clipped = svg.append("clipPath")
-        .attr("id", "program-metrics-clip")
-      .append("use")
-        .attr("xlink:href", "#programMetricsPath");
-
-    var map = svg.append("g")
-        .attr("clip-path", "url(#program-metrics-clip)")
+        .attr("clip-path", "url(#contiguous-us-clip)")
       .selectAll("image")
         .data(tiles)
       .enter().append("image")
-        .attr("xlink:href", d => `https://a.basemaps.cartocdn.com/rastertiles/light_nolabels/${d[2]}/${d[0]}/${d[1]}.png`)
+        .attr("xlink:href", baseMapURL)
         .attr("x", d => (d[0] + tiles.translate[0]) * tiles.scale)
         .attr("y", d => (d[1] + tiles.translate[1]) * tiles.scale)
         .attr("width", tiles.scale)
