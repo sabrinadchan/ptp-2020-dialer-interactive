@@ -92,8 +92,8 @@
 
   // load geospatial boundaries
   Promise.all([
-    d3.json("data/geospatial/random_points_canvass_pct_2.geojson"),
-    d3.json("data/geospatial/random_points_phone_pct_2.geojson"),
+    d3.json("data/geospatial/canvass-distribution.geojson"),
+    d3.json("data/geospatial/phone-distribution.geojson"),
     d3.json("data/geospatial/states-10m-filtered.topojson"),
   ])
   .then(([canvass, phone, us,]) => {
@@ -202,7 +202,6 @@
     });
 
     phoneTargetsButton.on("click", function(_, d) {
-      console.log(this)
       transitionStateMap(circles, phone, this);
     });
 
