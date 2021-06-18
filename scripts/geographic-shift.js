@@ -202,14 +202,14 @@
     });
 
     phoneTargetsButton.on("click", function(_, d) {
+      console.log(this)
       transitionStateMap(circles, phone, this);
     });
+
+    transitionStateMap(circles, phone, phoneTargetsButton.node());
   }
 
   function transitionStateMap(circles, data, text) {
-    d3.select(".text-button.active").classed("active", null);
-    d3.select(text).classed("active", true);
-
     var t = d3.transition()
         .delay(500) // make shorter still?
         .duration(2000);
@@ -218,7 +218,11 @@
         .transition(t)
         .attr("cx", d => projectionState(d)[0])
         .attr("cy", d => projectionState(d)[1])
-        .attr("r", 1);
+        .attr("r", 1)
+        .on("end", function() {
+          d3.select(".text-button.active").classed("active", null);
+          d3.select(text).classed("active", true);
+        })
   }
 
   function updateCircles(sel) {
